@@ -21,6 +21,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 /** Header */
 a.nav-link {
     color: var(--black);
