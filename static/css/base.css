@@ -12,3 +12,20 @@
     --grey: #495058;
     --blue: #007EA7;
 }
+
+html, body {
+    height: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+/** Header */
+a.nav-link {
+    color: var(--black);
+}
+
+#logo-picture{
+    width: 15rem; ;
+}
