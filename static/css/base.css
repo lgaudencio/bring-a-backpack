@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Nunito:wght@300&family=Playfair+Display&display=swap');
+
+:root {
+    /** Fonts */
+    --nav-font: 'Nunito', serif; 
+    --heading-font: 'Playfair Display', serif; 
+    --main-font: 'Dosis', serif; 
+
+    /** Colours */
+    --black: #000000; 
+    --white: #ffffff;
+    --grey: #495058;
+    --blue: #007EA7;
+}
