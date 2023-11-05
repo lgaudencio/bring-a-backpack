@@ -7,7 +7,7 @@
         </div>
     </a>
     {% with request.resolver_match.url_name as url_name %}
-    <nav class="navbar navbar-expand-lg bg-white">
+      <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,14 +31,14 @@
               </li>
               {% if request.user.is_authenticated %}
               <li class="nav-item">
-                <a class="nav-link" href="/accounts/signup/">LOGOUT</a>
+                <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}" href="/accounts/signup/">LOGOUT</a>
               </li>
               {% else %}
               <li class="nav-item">
-                <a class="nav-link" href="/accounts/login/">LOGIN</a>
+                <a class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}" href="/accounts/login/">LOGIN</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/accounts/signup">REGISTER</a>
+                <a class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}" href="/accounts/signup">REGISTER</a>
               </li>
               {% endif %}
             </ul>
