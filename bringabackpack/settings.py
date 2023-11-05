@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'fontawesomefree',
     'crispy_forms', 
     'crispy_bootstrap5',
+    
 ]
 
 SITE_ID = 1
