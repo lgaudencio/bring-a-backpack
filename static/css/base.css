@@ -58,3 +58,8 @@ footer {
     transition: 0.3s;
     color: var(--blue);
 }
+
+.active {
+    border-bottom: 1px solid (--blue);
+    font-weight: bolder;
+}
