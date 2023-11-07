@@ -21,3 +21,6 @@ class Destination(models.Model):
 
     class Meta:
         ordering = ['-date_posted']
+
+    def __str__(self):
+        return str(self.title)
