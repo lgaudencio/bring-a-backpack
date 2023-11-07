@@ -17,3 +17,7 @@ class Destination(models.Model):
     )
     photo_alt = models.CharField(max_length=100, null=False, blank=False)
     review = RichTextField(max_length=20000, null=False, blank=False)
+    date_posted = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-date_posted']
