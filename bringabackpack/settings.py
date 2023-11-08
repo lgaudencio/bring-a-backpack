@@ -82,7 +82,7 @@ DJRICHTEXTFIELD_CONFIG = {
             ['NumberedList', 'BulletedList', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
             ['Undo', 'Redo'], ['Maximize'], ['Link', 'Unlink']
         ],
-        'format_tags':
+        'format_tags': 'p;h1;h2;h3;h4'
     }
 }
 
