@@ -73,6 +73,19 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
+DJRICHTEXTFIELD_CONFIG = {
+    'js': ['//cdn.ckeditor.com/4.14.0/standard/ckeditor.js'],
+    'init_template': 'djrichtextfield/init/ckeditor.js',
+    'settings': {
+        'toolbar': [
+            ['Format', 'Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Undo', 'Redo'], ['Maximize'], ['Link', 'Unlink']
+        ],
+        'format_tags':
+    }
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
