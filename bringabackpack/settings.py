@@ -45,18 +45,30 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sites',
+    'django.contrib.staticfiles',
+
+    # Font Awesome
+    'fontawesomefree',
+
+    # All-Auth
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'cloudinary_storage',
-    'django.contrib.staticfiles',
-    'cloudinary', 
+
+    # Apps
     'reviewsite',
-    'fontawesomefree',
+    'destinations',
+
+    # Crispy 
     'crispy_forms', 
     'crispy_bootstrap5',
-    'destinations'
-    
+
+    # Cloudinary 
+    'cloudinary', 
+    'cloudinary_storage',
+
+    # RichText
+    'djrichtextfield'
 ]
 
 SITE_ID = 1
