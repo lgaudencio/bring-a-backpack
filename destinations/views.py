@@ -10,6 +10,7 @@ class AddDestination(CreateView):
     template_name = 'destinations/add_destination.html'
     model = Destination
     success_url = '/destinations/'
+    form_class = DestinationForm
 
     def form_valid(self, form):
         form.instance.user = self.request.user
