@@ -1,9 +1,10 @@
 from django.views.generic import CreateView
 from .models import Destination
 from .forms import DestinationForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-class AddDestination(CreateView):
+class AddDestination(LoginRequiredMixin, CreateView):
     """
     Add a destination review view
     """
