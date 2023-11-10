@@ -1,5 +1,5 @@
 from django.views.generic import CreateView
-from .models import Recipe
+from .models import Destination
 from .forms import DestinationForm
 
 
