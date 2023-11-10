@@ -1,3 +1,11 @@
-from django.shortcuts import render
+from django.views.generic import CreateView
+from .models import Recipe
 
-# Create your views here.
+
+class AddDestination(CreateView):
+    """
+    Add a destination review view
+    """
+    template_name = 'destinations/add_destination.html'
+    model = Destination
+    success_url = '/destinations/'
