@@ -3,6 +3,13 @@ from .models import Destination
 from .forms import DestinationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 
+class Destinations(ListView):
+    """
+    View all destination reviews
+    """
+    template_name = 'destinations/destinations.html'
+    model = Destination
+    context_object_name = 'destinations'
 
 class AddDestination(LoginRequiredMixin, CreateView):
     """
