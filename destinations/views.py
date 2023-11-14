@@ -1,4 +1,4 @@
-from django.views.generic import CreateView
+from django.views.generic import CreateView, ListView
 from .models import Destination
 from .forms import DestinationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
