@@ -3,11 +3,9 @@
 {% block title %}Destinations{% endblock %}
 
 {% block content %}
-<div class="container d-flex flex-row flex-wrap justify-content-center">
-    <h1 class="text-center">
-        Recent Destination Reviews
-    </h1>
 
+<h1 class="text-center">Recent Destination Reviews</h1>
+<div class="container d-flex flex-row flex-wrap justify-content-center">
     {% for destination in destinations %}
     <a href="" class="destinations" aria-label="{{destination.title}} - Click to view">
         <div class="card mb-3" style="max-width: 540px;">
