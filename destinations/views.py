@@ -1,4 +1,4 @@
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, ListView, DetailView
 from .models import Destination
 from .forms import DestinationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -10,6 +10,16 @@ class Destinations(ListView):
     template_name = 'destinations/destinations.html'
     model = Destination
     context_object_name = 'destinations'
+
+
+class DestinationFullReview(DetailView):
+    """
+    View a single full destination review
+    """
+    template_name = 'destinations/destinations.html'
+    model = Destination
+    context_object_name = 'destination'
+
 
 class AddDestination(LoginRequiredMixin, CreateView):
     """
