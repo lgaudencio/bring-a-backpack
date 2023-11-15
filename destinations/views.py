@@ -16,7 +16,7 @@ class DestinationFullReview(DetailView):
     """
     View a single full destination review
     """
-    template_name = 'destinations/destinations.html'
+    template_name = 'destinations/destination_full_review.html'
     model = Destination
     context_object_name = 'destination'
 
