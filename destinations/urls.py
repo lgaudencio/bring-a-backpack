@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import AddDestination, Destinations
+from .views import AddDestination, Destinations, DestinationFullReview
 
 
 urlpatterns = [
