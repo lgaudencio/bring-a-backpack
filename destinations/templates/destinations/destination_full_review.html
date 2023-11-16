@@ -4,5 +4,24 @@
 
 {% block content %}
 
+<div class="container">
+    <div class="review-header">
+        <h1 class="text-center">{{ destination.title }}</h1>
+        <p>Posted by {{ destination.user }} on {{ destination.date_posted }}</p>
+    </div>
+    <div class="review-photo">
+        <img src="{{ destination.photo.url }}" alt="{{ destination.photo_alt }}" class="review-pic">
+    </div>
+    <div class="review-entry">
+        <p>{{ destination.review|safe }}</p>
+    </div>
+    {% if request.user == destination.user %}
+    <div class="text-center">
+        <a href="" class="btn btn-dark w-25 p-2 mb-3">Edit Review</a>
+        <a href="" class="btn btn-dark w-25 p-2 mb-3">Delete Review</a>
+    </div>
+    {% endif %}
+
+</div>
 
 {% endblock %}
