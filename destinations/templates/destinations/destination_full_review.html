@@ -7,12 +7,12 @@
 <div class="container">
     <div class="review-header">
         <h1 class="text-center">{{ destination.title }}</h1>
-        <p>Posted by {{ destination.user }} on {{ destination.date_posted }}</p>
+        <p class="text-center">Posted by {{ destination.user }} on {{ destination.date_posted }}</p>
     </div>
-    <div class="review-photo">
+    <div class="review-photo text-center">
         <img src="{{ destination.photo.url }}" alt="{{ destination.photo_alt }}" class="review-pic">
     </div>
-    <div class="review-entry">
+    <div class="review-entry text-center">
         <p>{{ destination.review|safe }}</p>
     </div>
     {% if request.user == destination.user %}
