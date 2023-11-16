@@ -7,11 +7,11 @@
 <div class="container d-flex flex-row flex-wrap justify-content-center">
     {% for destination in destinations %}
     <div class="card" style="max-width: 470px;">
-      <h2 class="card-title text-center">{{destination.title}}</h2>
+      <h2 class="card-title text-center p-3">{{destination.title}}</h2>
       <img src="{{destination.photo.url}}" class="img-fluid" alt="{{destination.photo_alt}}">
       <div class="text-center card-body">
-        <h3 class="card-text">{{destination.brief}}</h3>
-        <p class="card-text">{{destination.review|truncatechars:50}}</p>
+        <h3 class="card-text p-2">{{destination.brief}}</h3>
+        <p class="card-text p-2">{{destination.review|truncatechars:50}}</p>
         <a href="{% url 'destination_full_review' destination.id %}" class="btn btn-dark w-50 p-2 mb-3">Continue Reading...</a>
       </div>
     </div>
