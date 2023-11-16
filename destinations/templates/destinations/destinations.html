@@ -3,27 +3,18 @@
 {% block title %}Destinations{% endblock %}
 
 {% block content %}
-
 <h1 class="text-center">Recent Destination Reviews</h1>
 <div class="container d-flex flex-row flex-wrap justify-content-center">
     {% for destination in destinations %}
-    <a href="{% url 'destination_full_review' destination.id %}" class="destinations" aria-label="{{destination.title}} - Click to view">
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="{{destination.photo.url}}" class="img-fluid rounded-start" alt="{{destination.photo_alt}}">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h2 class="card-title">{{destination.title}}</h2>
-                  <h3 class="card-text">{{destination.brief}}</h3>
-                  <p class="card-text">{{destination.review|truncatechars:50}}</p>
-                </div>
-              </div>
-            </div>
-        </div>
-    </a>
+    <div class="card" style="max-width: 470px;">
+      <h2 class="card-title text-center">{{destination.title}}</h2>
+      <img src="{{destination.photo.url}}" class="img-fluid" alt="{{destination.photo_alt}}">
+      <div class="text-center card-body">
+        <h3 class="card-text">{{destination.brief}}</h3>
+        <p class="card-text">{{destination.review|truncatechars:50}}</p>
+        <a href="{% url 'destination_full_review' destination.id %}" class="btn btn-dark w-50 p-2 mb-3">Continue Reading...</a>
+      </div>
+    </div>
     {% endfor %}
-
 </div>
 {% endblock %}
