@@ -34,3 +34,11 @@ class AddDestination(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(AddDestination, self).form_valid(form)
+
+
+class DeleteDestination(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """
+    Delete a destination review
+    """
+    model = Destination
+    success_url = '/destinations/'
