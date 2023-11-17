@@ -42,3 +42,6 @@ class DeleteDestination(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
     model = Destination
     success_url = '/destinations/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
