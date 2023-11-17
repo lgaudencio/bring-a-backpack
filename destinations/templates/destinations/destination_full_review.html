@@ -18,7 +18,7 @@
     {% if request.user == destination.user %}
     <div class="text-center">
         <a href="" class="btn btn-dark w-25 p-2 mb-3">Edit Review</a>
-        <a href="" class="btn btn-dark w-25 p-2 mb-3">Delete Review</a>
+        <a href="{% url 'destination_delete' destination.id %}" class="btn btn-dark w-25 p-2 mb-3">Delete Review</a>
     </div>
     {% endif %}
 
