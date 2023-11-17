@@ -2,6 +2,7 @@ from django.views.generic import CreateView, ListView, DetailView, DeleteView
 from .models import Destination
 from .forms import DestinationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 
 class Destinations(ListView):
     """
