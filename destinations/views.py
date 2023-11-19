@@ -36,6 +36,19 @@ class AddDestination(LoginRequiredMixin, CreateView):
         return super(AddDestination, self).form_valid(form)
 
 
+class EditDestination(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """
+    Edit a destination review
+    """
+    template_name = 'destinations/edit_destination.html'
+    model = Destination
+    form_class = DestinationForm
+    success_url = '/destinations/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
+
 class DeleteDestination(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
     Delete a destination review
