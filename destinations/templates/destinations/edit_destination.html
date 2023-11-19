@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Destination Review{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <form method="POST" enctype="multipart/form-data" class="form p-3">
+        <h1 class="text-center">Edit Destination Review</h1>
+        {% csrf_token %}
+        {{ form.media }}
+        {{ form|crispy }}
+        <div class="text-center">
+            <button class="btn btn-dark w-25 p-2 mb-3" type="submit">Edit Review!</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
