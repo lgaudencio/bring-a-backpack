@@ -6,7 +6,7 @@
 <h1 class="text-center">Recent Destination Reviews</h1>
 <div class="container d-flex flex-row flex-wrap justify-content-center pt-5 pb-5">
     {% for destination in destinations %}
-    <div class="card" style="max-width: 750px;">
+    <div class="card" style="max-width: 490px;">
       <h2 class="card-title text-center p-3">{{destination.title}}</h2>
       <img src="{{destination.photo.url}}" class="img-fluid" alt="{{destination.photo_alt}}">
       <div class="text-center card-body">
