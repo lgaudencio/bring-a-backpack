@@ -3,6 +3,7 @@ from .models import Destination
 from .forms import DestinationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
+from django.db.models import Q
 
 class Destinations(ListView):
     """
@@ -11,6 +12,18 @@ class Destinations(ListView):
     template_name = 'destinations/destinations.html'
     model = Destination
     context_object_name = 'destinations'
+
+    def get_queryset(self, **kwargs):
+        query = self.request.GET.get('q')
+        if query:
+            destinations = self.model.objects.filter(
+                Q(title__icontains=query) |
+                Q(brief__icontains=query) |
+                Q(review__icontains=query)
+            )
+        else:
+            destinations = self.model.objects.all()
+        return destinations
 
 
 class DestinationFullReview(DetailView):
