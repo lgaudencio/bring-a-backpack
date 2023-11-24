@@ -15,3 +15,6 @@ class Profile(models.Model):
     nationality = RichTextField(max_length=50, null=False, blank=False)
     traveler_type = RichTextField(max_length=100, null=False, blank=False)
     bio = RichTextField(max_length=2000, null=True, blank=True)
+
+    def __str__(self):
+        return str(self.user.username)
