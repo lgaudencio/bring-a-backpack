@@ -18,3 +18,12 @@ class Profile(models.Model):
 
     def __str__(self):
         return str(self.user.username)
+
+
+@receiver(post_save, sender=User)
+def create_user_profile(instance, created, **kwargs):
+    """
+    Create or update the user profile
+    """
+    if created:
+        Profile.objects.create(user=instance)
