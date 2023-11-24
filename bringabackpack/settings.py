@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     # Apps
     'reviewsite',
     'destinations',
+    'profiles'
 
     # Crispy 
     'crispy_forms', 
