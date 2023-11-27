@@ -63,3 +63,8 @@ a.active {
     border-bottom: 2px solid var(--blue);
     font-weight: bolder;
 }
+
+div.card {
+    max-width: 490px;
+    margin: 20px;
+}
