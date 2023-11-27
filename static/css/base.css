@@ -59,7 +59,7 @@ footer {
     color: var(--blue);
 }
 
-.active {
-    border-bottom: 1px solid (--blue);
+a.active {
+    border-bottom: 2px solid var(--blue);
     font-weight: bolder;
 }
