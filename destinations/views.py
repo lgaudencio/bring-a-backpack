@@ -41,7 +41,7 @@ class AddDestination(LoginRequiredMixin, CreateView):
     """
     template_name = 'destinations/add_destination.html'
     model = Destination
-    success_url = '/destinations/'
+    success_url = '/destinations/destinations/'
     form_class = DestinationForm
 
     def form_valid(self, form):
@@ -56,7 +56,7 @@ class EditDestination(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     template_name = 'destinations/edit_destination.html'
     model = Destination
     form_class = DestinationForm
-    success_url = '/destinations/'
+    success_url = '/destinations/destinations/'
 
     def test_func(self):
         return self.request.user == self.get_object().user
@@ -67,7 +67,7 @@ class DeleteDestination(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     Delete a destination review
     """
     model = Destination
-    success_url = '/destinations/'
+    success_url = '/destinations/destinations/'
 
     def test_func(self):
         return self.request.user == self.get_object().user
