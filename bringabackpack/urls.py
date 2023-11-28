@@ -21,5 +21,6 @@ urlpatterns = [
     path('', include('reviewsite.urls')),
     path('accounts/', include('allauth.urls')),
     path('djrichtextfield/', include('djrichtextfield.urls')),
-    path('destinations/', include('destinations.urls'))
+    path('destinations/', include('destinations.urls')),
+    path('profiles/', include('profiles.urls')), 
 ]
