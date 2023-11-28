@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView, UpdateView
+from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from .models import Profile
 from .forms import Profile
 
@@ -18,7 +19,7 @@ class Profiles(TemplateView):
         return context
 
 
-class EditProfile(UpdateView):
+class EditProfile(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     Edit a profile
     """
@@ -28,3 +29,6 @@ class EditProfile(UpdateView):
     def form_valid(self, form):
         self.success_url = f"/profile/view/{self.kwargs['pk']}"
         return super().form_valid(form)
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
