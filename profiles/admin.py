@@ -8,7 +8,7 @@ class ProfileAdmin(admin.ModelAdmin):
         'user',
         'display_picture',
         'nationality',
-        'traveler type', 
+        'traveler_type', 
         'bio'
     )
 
