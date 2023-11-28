@@ -18,7 +18,7 @@
                 <a class="nav-link {% if url_name == 'reviewsite' %}active{% endif %}" aria-current="page" href="{% url 'reviewsite' %}">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'destinations' %}">DESTINATIONS</a>
+                <a class="nav-link {% if url_name == 'destinations' %}active{% endif %}" href="{% url 'destinations' %}">DESTINATIONS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">PHOTOGRAPHY</a>
@@ -27,7 +27,7 @@
                 <a class="nav-link" href="#">CONTACT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'add_destination' %}">NEW</a>
+                <a class="nav-link {% if url_name == 'add_destination' %}active{% endif %}" href="{% url 'add_destination' %}">NEW</a>
               </li>
               {% if request.user.is_authenticated %}
               <li class="nav-item">
