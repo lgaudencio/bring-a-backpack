@@ -1,5 +1,6 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, UpdateView
 from .models import Profile
+from .forms import Profile
 
 
 class Profiles(TemplateView):
@@ -15,3 +16,15 @@ class Profiles(TemplateView):
         }
 
         return context
+
+
+class EditProfile(UpdateView):
+    """
+    Edit a profile
+    """
+    form_class = ProfileForm
+    model = Profile 
+
+    def form_valid(self, form):
+        self.success_url = f"/profile/view/{self.kwargs['pk']}"
+        return super().form_valid(form)
