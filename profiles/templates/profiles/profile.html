@@ -9,7 +9,7 @@
         <div class="user-info">
             <div class="display-pic text-center">
                 {% if profile.display_picture.url is not none %}
-                <img src="{{ profile.display_picture.url %}}" alt="Display picture for {{ profile.user.username }}">
+                <img src="{{ profile.display_picture.url }}" alt="Display picture for {{ profile.user.username }}">
                 {% else %}
                 <img src="{% static '/icons/no-display-pic.svg' %}" alt="No image uploaded">
                 {% endif %}
@@ -21,5 +21,13 @@
             {{ profile.traveler_type|safe }}
             {{ profile.bio|safe }}
         </div>
+        <div class="profile-destinations">
+            <h2 class="text-center">Latest Destination Reviews</h2>
+            {% for destination in profile.user.destination_review_owner.all %}
+            <a href="{% url 'destination_full_review' destination.id %}"><h3>{{ destination.title }}</h3></a>
+            {{ destination.date_posted }}
+            {% endfor %}
+        </div>
     </div>
 </div>
+{% endblock %}
