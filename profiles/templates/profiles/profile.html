@@ -14,6 +14,11 @@
                 <img src="{% static '/icons/no-display-pic.svg' %}" alt="No image uploaded">
                 {% endif %}
             </div>
+            <h1>{{ profile.user.username }}</h1>
+            <p>Member since {{ profile.user.date_joined|date:'M Y'}}</p>
+            {{ profile.nationality|safe }}
+            {{ profile.traveler_type|safe }}
+            {{ profile.bio|safe }}
         </div>
     </div>
 </div>
