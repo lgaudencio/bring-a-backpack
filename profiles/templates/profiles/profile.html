@@ -16,7 +16,7 @@
             </div>
             <h1>{{ profile.user.username }}</h1>
             <p>Member since {{ profile.user.date_joined|date:'M Y'}}</p>
-            <p>{{ profile.user.destination_owner.count }} Destination Reviews Published</p>
+            <p>{{ profile.user.destination_review_owner.count }} Destination Reviews Published</p>
             {{ profile.nationality|safe }}
             {{ profile.traveler_type|safe }}
             {{ profile.bio|safe }}
