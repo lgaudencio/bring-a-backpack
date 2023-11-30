@@ -14,10 +14,6 @@
                 <img src="{% static '/icons/no-display-pic.svg' %}" alt="No image uploaded">
                 {% endif %}
 
-                {% if request.user == profile.user %}
-                <button id="myBtn" class="btn btn-dark w-25 p-2 mb-3">Edit Profile</button>
-                {% endif %}
-
             </div>
             <h1>{{ profile.user.username }}</h1>
             <p>Member since {{ profile.user.date_joined|date:'M Y'}}</p>
@@ -27,6 +23,11 @@
             {% if profile.bio is not none %}
             {{ profile.bio|safe }}
             {% endif %}
+
+            {% if request.user == profile.user %}
+                <button id="myBtn" class="btn btn-dark w-25 p-2 mb-3">Edit Profile</button>
+            {% endif %}
+            
         </div>
         <div class="profile-destinations">
             <h2 class="text-center">Latest Destination Reviews</h2>
