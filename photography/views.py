@@ -1,5 +1,6 @@
 from django.views.generic import CreateView
 from .models import Photography
+from .forms import PhotographyForm
 
 
 class AddPhotography(CreateView):
@@ -8,6 +9,7 @@ class AddPhotography(CreateView):
     """
     template_name = 'photography/add_photography.html'
     model = Photography
+    form_class = PhotographyForm
     success_url = '/photography/'
 
     def form_valid(self, form):
