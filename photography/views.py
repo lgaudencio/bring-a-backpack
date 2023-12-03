@@ -1,9 +1,10 @@
 from django.views.generic import CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Photography
 from .forms import PhotographyForm
 
 
-class AddPhotography(CreateView):
+class AddPhotography(LoginRequiredMixin, CreateView):
     """
     Add photography view
     """
