@@ -27,7 +27,7 @@
                 <a class="nav-link" href="#">CONTACT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {% if url_name == 'add_destination' %}active{% endif %}" href="{% url 'add_destination' %}">NEW</a>
+                <a class="nav-link {% if url_name == 'add_destination' %}active{% endif %}" href="{% url 'add_destination' %}">NEW DESTINATION</a>
               </li>
               {% if request.user.is_authenticated %}
               <li class="nav-item">
