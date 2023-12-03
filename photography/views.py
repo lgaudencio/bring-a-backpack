@@ -9,4 +9,7 @@ class AddPhotography(CreateView):
     template_name = 'photography/add_photography.html'
     model = Photography
     success_url = '/photography/'
-    
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super(AddPhotography, self).form_valid(form)
