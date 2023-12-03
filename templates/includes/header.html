@@ -29,6 +29,9 @@
               <li class="nav-item">
                 <a class="nav-link {% if url_name == 'add_destination' %}active{% endif %}" href="{% url 'add_destination' %}">NEW DESTINATION</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link {% if url_name == 'add_photography' %}active{% endif %}" href="{% url 'add_photography' %}">NEW PHOTOGRAPHY</a>
+              </li>
               {% if request.user.is_authenticated %}
               <li class="nav-item">
                 <a class="nav-link {% if url_name == 'profile' %}active{% endif %}" href="{% url 'profile' request.user.id %}">PROFILE</a>
