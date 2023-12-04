@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Photography Post - {{photography.post_title}}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="post-header">
+        <h1 class="text-center">{{ photography.post_title }}</h1>
+        <p class="text-center">Posted by {{ photography.user }} on {{ photography.date_posted }}</p>
+        <h2 class="text-center">{{ photography.post_brief }}</h2>
+    </div>
+    <div class="photography-photos text-center">
+        <img src="{{ photography.main_photo.url }}" alt="{{ photography.main_photo_alt }}" class="main-pic">
+        <img src="{{ photography.photo_1.url }}" alt="{{ photography.photo_1_alt }}" class="post-pic">
+        <img src="{{ photography.photo_2.url }}" alt="{{ photography.photo_2_alt }}" class="post-pic">
+        <img src="{{ photography.photo_3.url }}" alt="{{ photography.photo_3_alt }}" class="post-pic">
+        <img src="{{ photography.photo_4.url }}" alt="{{ photography.photo_4_alt }}" class="post-pic">
+        <img src="{{ photography.photo_5.url }}" alt="{{ photography.photo_5_alt }}" class="post-pic">
+        <img src="{{ photography.photo_6.url }}" alt="{{ photography.photo_6_alt }}" class="post-pic">
+        <img src="{{ photography.photo_7.url }}" alt="{{ photography.photo_7_alt }}" class="post-pic">
+        <img src="{{ photography.photo_8.url }}" alt="{{ photography.photo_8_alt }}" class="post-pic">
+        <img src="{{ photography.photo_9.url }}" alt="{{ photography.photo_9_alt }}" class="post-pic">
+    </div>
+    {% if request.user == photography.user %}
+    <div class="text-center">
+        <a href="" class="btn btn-dark w-25 p-2 mb-3">Edit Post</a>
+        <a href="" class="btn btn-dark w-25 p-2 mb-3">Delete Post</a>
+    </div>
+    {% endif %}
+
+</div>
+
+{% endblock %}
