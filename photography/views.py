@@ -1,4 +1,4 @@
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, ListView, DetailView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Photography
 from .forms import PhotographyForm
@@ -11,6 +11,15 @@ class PhotographyList(ListView):
     template_name = 'photography/photography.html'
     model = Photography 
     context_object_name = 'photography_list'
+
+
+class PhotographyDetail(DetailView):
+    """ 
+    View a single photography post 
+    """
+    template_name = 'photography/photography_full_post.html'
+    model = Photography 
+    context_object_name = 'photography'
 
 
 class AddPhotography(LoginRequiredMixin, CreateView):
