@@ -11,7 +11,7 @@
       <img src="{{photography.main_photo.url}}" class="img-fluid" alt="{{photography.main_photo_alt}}">
       <div class="text-center card-body">
         <h3 class="card-text p-2">{{photography.post_brief}}</h3>
-        <a href="" class="btn btn-dark w-50 p-2 mb-3">View Post...</a>
+        <a href="{% url 'photography_full_post' photography.id %}" class="btn btn-dark w-50 p-2 mb-3">View Post...</a>
       </div>
     </div>
     {% endfor %}
