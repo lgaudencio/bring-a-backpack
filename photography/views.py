@@ -1,5 +1,6 @@
-from django.views.generic import CreateView, ListView, DetailView
+from django.views.generic import CreateView, ListView, DetailView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from .models import Photography
 from .forms import PhotographyForm
 
@@ -34,3 +35,14 @@ class AddPhotography(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(AddPhotography, self).form_valid(form)
+
+
+class DeletePhotography(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """ 
+    Delete a photography post
+    """
+    model = Photography
+    success_url = '/photography/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
