@@ -24,7 +24,7 @@
     </div>
     {% if request.user == photography.user %}
     <div class="text-center">
-        <a href="" class="btn btn-dark w-25 p-2 mb-3">Edit Post</a>
+        <a href="{% url 'edit_photography' photography.id %}" class="btn btn-dark w-25 p-2 mb-3">Edit Post</a>
         <a href="{% url 'delete_photography' photography.id %}" class="btn btn-dark w-25 p-2 mb-3">Delete Post</a>
     </div>
     {% endif %}
