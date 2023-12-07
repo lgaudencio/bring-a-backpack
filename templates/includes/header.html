@@ -26,11 +26,18 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">CONTACT</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link {% if url_name == 'add_destination' %}active{% endif %}" href="{% url 'add_destination' %}">NEW DESTINATION</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link {% if url_name == 'add_photography' %}active{% endif %}" href="{% url 'add_photography' %}">NEW PHOTOGRAPHY</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ADD NEW
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link {% if url_name == 'add_destination' %}active{% endif %}" href="{% url 'add_destination' %}">DESTINATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link {% if url_name == 'add_photography' %}active{% endif %}" href="{% url 'add_photography' %}">PHOTOGRAPHY</a>
+                  </li>
+                </ul>
               </li>
               {% if request.user.is_authenticated %}
               <li class="nav-item">
