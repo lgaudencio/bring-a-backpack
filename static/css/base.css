@@ -75,3 +75,11 @@ div.card {
     max-width: 490px;
     margin: 20px;
 }
+
+div.top-centered {
+    font-family: var(--main-font);
+    font-size: 140%;
+    letter-spacing: 1px;
+    color: var(--black);
+    text-decoration-line: underline;
+}
