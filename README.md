@@ -164,6 +164,38 @@ The website logo was designed using Canva and matches the colour scheme of the w
 
 All images used across the website are my photographs taken from my own travels around Europe.
 
+### Technologies
+
+* HTML
+    * The structure of the website was developed using HTML as the main language.
+
+* CSS
+    * The website was styled using custom CSS in an external file.
+
+* JavaScript
+    * JavaScript was used to create the modal where the users can update/edit their profile. 
+ 
+* Python
+    * Python was the main programming language used for the application using the Django framework.
+
+* Visual Studio Code
+    * The website was developed using Visual Studio Code IDE.
+
+* GitHub
+    * Source code is hosted on GitHub.
+
+* Git
+    * Used to commit and push code during the development of the website.
+
+* Font Awesome
+    * This was used for the social media icons that can be seen on the footer of the website.
+
+* Canva
+    * This was used to create thew website logo which can be seen on the header of the website and it was used to create the design of the favicon.
+
+* Favicon.io
+    * Favicon files were created at [favicon.io](https://favicon.io/)
+
 ### Deployment 
 
 #### Version Control 
