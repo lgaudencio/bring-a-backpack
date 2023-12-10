@@ -163,3 +163,17 @@ Three fonts were used throughout the website, these were:
 The website logo was designed using Canva and matches the colour scheme of the website.
 
 All images used across the website are my photographs taken from my own travels around Europe.
+
+### Deployment 
+
+#### Version Control 
+
+The site was created using Visual Studio Code editor and pushed to GitHub.
+
+The following git commands were used throughout development to push the code to the remote repo:
+
+* *git add* - This command was used to add file(s) to the staging area before they are committed.
+
+* *git commit -m “commit message”* – This command was used to commit changes to the local repository queue ready for the final step.
+
+* *git push* – This command was used to push all committed code to the remote repository on GitHub.
