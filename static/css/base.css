@@ -33,6 +33,12 @@ main {
 /** Header */
 a.nav-link {
     color: var(--black);
+    font-family: var(--nav-font);
+}
+
+a.active {
+    border-bottom: 2px solid var(--blue);
+    font-weight: bold;
 }
 
 #logo-picture{
@@ -57,11 +63,6 @@ footer {
 .social-media:hover {
     transition: 0.3s;
     color: var(--blue);
-}
-
-a.active {
-    border-bottom: 2px solid var(--blue);
-    font-weight: bolder;
 }
 
 div.card {
