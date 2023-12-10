@@ -133,3 +133,33 @@ Complete the readme documentation
 * Restricted roles based on features.
 
 * Home must contain information about the site and quick links to some pages.
+
+### The Surface Plane
+
+#### Design 
+
+#### Colour Scheme
+
+The main colour schemes for the website are as follows:
+
+* White (#FFFFFF) – This colour was used for the background of the website and for text inside all buttons.
+
+* Black (#000000) – This colour was used for all text used in the website and all button background colours.
+
+* Blue (#007EA7) – This colour was used in two places. First, it was used for the active class, this way the user will know on what page they are on. Secondly, it is used for when the user hovers over the social media icons.
+
+#### Typography 
+
+Three fonts were used throughout the website, these were:
+
+* Playfair Display – Used for all heading levels across the website
+
+* Dosis – Used for all other text across the website
+
+* Nunito – Used only for the text on the navbar
+
+#### Imagery 
+
+The website logo was designed using Canva and matches the colour scheme of the website.
+
+All images used across the website are my photographs taken from my own travels around Europe.
