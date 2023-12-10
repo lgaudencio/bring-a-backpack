@@ -21,6 +21,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
+p {
+    font-family: var(--main-font);
+    font-size: 120%;
+    letter-spacing: 1px;
+}
+
 body{
     display: flex;
     flex-direction: column;
