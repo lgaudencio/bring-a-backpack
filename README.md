@@ -121,3 +121,15 @@ As a developer I need to deploy the project to heroku so that it is live fo
 Task: 
 
 Complete the readme documentation 
+
+### The Scope Plane
+
+* The site must have responsive design, it should be fully functional on all devices from 320px and above.
+
+* Hamburger menu must be displays on mobile devices.
+
+* Ability to perform CRUD functionality on the Destination Reviews and the Photography Posts.
+
+* Restricted roles based on features.
+
+* Home must contain information about the site and quick links to some pages.
