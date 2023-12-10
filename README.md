@@ -51,3 +51,73 @@ This epic is relating to the deployment of the app to heroku so that the site ca
 **EPIC 8 - Documentation**
 
 This epic is relating to all document related stories and tasks that are needed to document the software development lifecycle of the application. It aims to deliver quality documentation, explains all stages of development and necessary information on running, deploying and using the application. 
+
+##### User Stories
+
+**EPIC 1 - Base Setup**
+
+As a developer, I need to set up the project so that it is ready to implement the core features
+
+As a developer, I need to create a logo and navbar so that the user can navigate around the site across any given device
+
+As a developer, I need to create a footer with social media links so that the user can keep up with new destination reviews across various social media platforms
+
+As a developer, I need to create static resources so that images, CSS and JavaScript work on the website 
+
+As a developer I need to create a base.html page and structure so that all other pages across the site can reused the layout 
+
+**EPIC 2 - Authentication**
+
+As a developer I need to implement allauth so that users can sign up and have access to the sites features 
+
+As a site owner I would like the allauth pages to be customised so that they fit into the rest of the site design 
+
+**EPIC 3 - Destinations** 
+
+As a user I want to see all travel destination reviews so that I can decide whether to travel to that specific city/country 
+
+As a user I want to be able to create new travel reviews so that I can share my travel experiences 
+
+As a user I want to be able to edit travel review entries so that I can add any new information 
+
+As a user I want to be able to delete a destination review entry 
+
+As a user I want to be able to search for a specific destination so that I can save time by not needing to scroll down on recent destinations
+
+**EPIC 4 - Profiles**
+
+As a user I want to create a profile so that when I sign up, users can navigate to my profile and see the reviews I wrote
+ 
+As a user I want to edit my profile so that I can make changes when needed 
+
+As a user I want to view another users profile so that I can see all their posted destination reviews 
+
+**EPIC 5 - Photography** 
+
+As a user I want to see photography posts by other users so that I can see how they have captured their visited destination 
+
+As a user I want to be able to create photography posts so that I can share it with my community 
+
+As a user I want to be able to edit my photography post so that I can add or delete any pictures 
+
+As a user I want to be able to delete a photography post
+
+**EPIC 6 - Stand alone pages**
+
+As a site owner I would like a homepage so that site users are greeted with a welcoming landing page explaining the site and has key links 
+
+As a developer I need to implement a 403 error page for unauthorised users to be redirected so that I can secure my views 
+
+As a developer I need to implement a 404 error page so that users are alerted when they have landed on a page that does not exist 
+
+As a developer I need to implement a 500 error page so that users are alerted when an internal server error occurs
+
+**EPIC 7 - Deployment** 
+
+As a developer I need to deploy the project to heroku so that it is live for users 
+
+**EPIC 8 - Documentation**
+
+Task: 
+
+Complete the readme documentation 
