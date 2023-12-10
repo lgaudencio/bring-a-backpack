@@ -83,3 +83,8 @@ div.top-centered {
     color: var(--black);
     text-decoration-line: underline;
 }
+
+img.quick-link:hover {
+    filter: brightness(60%);
+    transition: 0.3s;
+}
