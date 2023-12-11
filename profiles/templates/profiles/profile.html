@@ -6,8 +6,8 @@
 {% block content %}
 <div class="container">
     <div class="profile">
-        <div class="user-info">
-            <div class="display-pic text-center">
+        <div class="user-info text-center">
+            <div class="display-pic">
                 {% if profile.display_picture.url is not none %}
                 <img class="profile-picture" src="{{ profile.display_picture.url }}" alt="Display picture for {{ profile.user.username }}">
                 {% else %}
@@ -15,7 +15,7 @@
                 {% endif %}
 
             </div>
-            <h1>{{ profile.user.username }}</h1>
+            <h1 class="p-5">{{ profile.user.username }}</h1>
             <p>Member since {{ profile.user.date_joined|date:'M Y'}}</p>
             <p>{{ profile.user.destination_review_owner.count }} Destination Reviews Published</p>
             {{ profile.nationality|safe }}
@@ -30,7 +30,7 @@
             
         </div>
         <div class="profile-destinations">
-            <h2 class="text-center">Latest Destination Reviews</h2>
+            <h2 class="text-center pt-5">Latest Destination Reviews</h2>
             {% for destination in profile.user.destination_review_owner.all %}
             <div class="latest-destinations text-center mb-4">
                 <a href="{% url 'destination_full_review' destination.id %}"><h3>{{ destination.title }}</h3></a>
