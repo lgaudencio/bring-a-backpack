@@ -134,6 +134,207 @@ Complete the readme documentation
 
 * Home must contain information about the site and quick links to some pages.
 
+### The Structure Plane
+
+#### Features 
+
+USER STORY – As a developer, I need to create a navbar so that the user can navigate around the site across any given device
+
+Implementation:
+
+**Navigation Menu**
+
+The Navigation contains links for Home, Photography, Destinations and has Allauth options.
+
+The following are navigation items that are available on all pages around the website:
+
+* Home > index.html - Visible to all
+* Destinations > destinations.html – Visible to all
+* Photography > photography.html – Visible to all
+* Add New (Dropdown):
+    * Add Destination > destination_full_review.html – Visible to all logged in users
+    * Add Photography > photography_full_post.html - Visible to all logged in users
+* Profile > profile.html – Visible to all logged in users
+* Login > login.html - Visible to all logged out users
+* Register > signup.html - Visible to logged out users
+* Logout > loutout.html - Visible to logged in users
+
+The navigation bar is displayed on all pages across the website and collapses into a hamburger menu on smaller devices. This will allow users on smaller devices to navigate around the website and it will not take up too much space.
+
+
+USER STORY – As a site owner I would like a homepage so that site users are greeted with a welcoming landing page explaining the site and has key links 
+
+Implementation:
+
+**Homepage**
+
+The homepage consists of a heading, which will have a welcome message to the website.
+
+Under the heading, it will have information about the website and what it aims to achieve, so any users that reads will know the purpose of the website.
+
+Under the main information, the user will be presented with three links – Photography, Destinations and Contact. These links will serve as a quick way to the respective pages.
+
+
+USER STORY – As a developer, I need to create a footer with social media links so that the user can keep up with new destination reviews across various social media platforms
+
+Implementation:
+
+**Footer**
+
+A footer has been added to the bottom of the website, this will contain links to social media accounts, which are: Facebook, Instagram, X and Pinterest. These links are for site users to follow us on these platforms and keep up with news on recent photography posts and destination reviews. The social media icons have aria-labels added to ensure that users who use screen readers know the purpose of the links. Once clicked, they will open up in a new tab, as they lead users away from the site.
+
+
+USER STORY – As a user I want to be able to create new travel reviews so that I can share my travel experiences 
+
+Implementation:
+
+**Create Destination Review**
+
+A create destination review page was implemented to allow all site users the ability to add their own reviews via the UI without having to use the backend admin panel. This allows users to add destination reviews so it can be seen and read by all other site users, regardless of login status.
+
+
+USER STORY – As a user I want to see all travel destination reviews so that I can decide whether to travel to that specific city/country 
+
+Implementation:
+
+**View Destination Review Page**
+
+A destination review page has been implemented to allow site users to see all published destination reviews in order of date posted, that way the most recent reviews are shown first. The published destination reviews are visible to all site users, regardless of login status. It would not be user friendly to restrict this information from users to force them into signing in.
+
+
+USER STORY – As a user I want to be able to edit travel review entries so that I can add any new information 
+
+Implementation:
+
+**Edit Destination Review Page**
+
+On the destination review page, an edit button was added to the bottom of the review, this way the review owner is able to edit their destination review. This button will only be displayed if the user is logged in.
+
+
+USER STORY – As a user I want to be able to delete a destination review entry 
+
+Implementation:
+
+**Delete Destination Review Page**
+
+On the destination review page, a delete button was added to the bottom of the review, this way the review owner is able to delete their destination review. This button will only be displayed if the user is logged in.
+
+
+USER STORY – As a user I want to be able to create photography posts so that I can share it with my community 
+
+Implementation:
+
+**Create Photography Post**
+
+A create photography post page was implemented to allow all site users the ability to add their own photos via the UI without having to use the backend admin panel. This allows users to add photography posts so it can be seen and read by all other site users, regardless of login status.
+
+
+USER STORY – As a user I want to see photography posts by other users so that I can see how they have captured their visited destination 
+
+Implementation:
+
+**View Photography Post**
+
+A photography post page has been implemented to allow site users to see all published photo posts in order of date posted, that way the most recent reviews are shown first. The published posts are visible to all site users, regardless of login status. It would not be user friendly to restrict this information from users to force them into signing in.
+
+
+USER STORY – As a user I want to be able to edit my photography post so that I can add or delete any pictures 
+
+Implementation:
+
+**Edit Photography Post**
+
+On the photography post page, an edit button was added to the bottom of the post, this way the review owner is able to edit their photos. This button will only be displayed if the user is logged in.
+
+
+USER STORY – As a user I want to be able to delete a destination review entry 
+
+Implementation:
+
+**Delete Photography Post**
+
+On the photography post page, a delete button was added to the bottom of the post, this way the review owner is able to delete their photography post. This button will only be displayed if the user is logged in.
+
+
+USER STORY – As a site user, I want to be able to search a photography post or a destination review, so that it saves users time from scrolling the page
+
+Implementation:
+
+**Search Bar**
+
+A search bar was added to the navbar to allow all site users to find either a photography post or a destination review. It will allow all site users to find posts and/or reviews by typing in the city or country. By adding a search bar, it will allow all users to save time and find what they are looking for quicker.
+
+
+USER STORY – As a user I want to create a profile so that when I sign up, users can navigate to my profile and see the reviews I wrote
+
+Implementation:
+
+**Create Profile**
+
+Once the user is registered and logged in, a profile will automatically be created. It would be up to the user to go into their profile and complete it as they wish. To add information to their profile they can navigate to the Profile link on the navbar and click on the Edit Profile button. Once clicked, this will open up a modal where the information can be added. Once changes have been made, click on the Save Changes button at the bottom of the modal to fill in the profile. 
+
+
+USER STORY – As a user I want to edit my profile so that I can make changes when needed 
+
+Implementation:
+
+**Edit Profile** 
+
+If the user wishes to change anything on their profile, they can navigate to the Profile link on the navbar and click on the Edit Profile button. Once clicked, this will open up a modal where the information can be updated. Once changes have been made, click on the Save Changes button at the bottom of the modal to update the profile. 
+
+
+USER STORY – As a developer, I want users to identify the website tab if they have multiple tabs opened.
+
+Implementation:
+
+**Favicon**
+
+A site wide favicon was implemented, therefore, users will be able to easily identify the site amongst many tabs by the favicon image.
+
+
+**Error Pages**
+
+USER STORY – As a developer I need to implement a 403 error page for unauthorised users to be redirected so that I can secure my views 
+
+Implementation:
+
+**403 Page**
+
+A 403 error page has been implemented to provide feedback to users when they try to access any unauthorised content. Users will see this error if they alter the URLs and attempt to edit, delete or access the pages that are restricted. 
+
+Users will be able to return back to the homepage via a button displayed on the 403 error page, thus eliminating the need to use the browsers back button. 
+
+This covers: 
+
+* Create Destination Review: Authorised to all signed in members 
+* Edit Destination Review: Authorised to all signed in members and only the publisher of the review can edit their own review
+* Delete Destination Review: Authorised to all signed in members and only the publisher of the review can delete their own review
+* Create Photography Post: Authorised to all signed in members  
+* Edit Photography Post: Authorised to all signed in members and only the publisher of the post can update their own photos
+* Delete Photography Post: Authorised to all signed in members and only the publisher of the post can delete their own post 
+
+
+USER STORY - As a developer I need to implement a 404 error page so that users are alerted when they have landed on a page that does not exist 
+
+Implementation: 
+
+**404 Page**
+
+A 404 error page has been implemented to provide feedback to users when they have access a page that does not exist or if they come across a broken link. 
+
+Users will be able to return back to the homepage via a button displayed on the 404 error page, thus eliminating the need to use the browsers back button.
+
+
+USER STORY - As a developer I need to implement a 500 error page so that users are alerted when an internal server error occurs
+
+Implementation: 
+
+**500 page**
+
+A 500 error page has been implemented to provide feedback to users when an internal server error occurs. 
+
+Users will be able to return back to the homepage via a button displayed on the 500 error page, thus eliminating the need to use the browsers back button.
+
 ### The Surface Plane
 
 #### Design 
