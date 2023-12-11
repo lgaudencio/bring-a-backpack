@@ -88,3 +88,10 @@ img.quick-link:hover {
     filter: brightness(60%);
     transition: 0.3s;
 }
+
+img.profile-picture {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}

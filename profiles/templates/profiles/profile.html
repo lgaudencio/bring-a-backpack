@@ -9,9 +9,9 @@
         <div class="user-info">
             <div class="display-pic text-center">
                 {% if profile.display_picture.url is not none %}
-                <img src="{{ profile.display_picture.url }}" alt="Display picture for {{ profile.user.username }}">
+                <img class="profile-picture" src="{{ profile.display_picture.url }}" alt="Display picture for {{ profile.user.username }}">
                 {% else %}
-                <img src="{% static '/icons/no-display-pic.svg' %}" alt="No image uploaded">
+                <img class="profile-picture" src="{% static '/icons/no-display-pic.svg' %}" alt="No image uploaded">
                 {% endif %}
 
             </div>
