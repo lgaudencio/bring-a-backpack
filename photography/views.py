@@ -30,7 +30,7 @@ class AddPhotography(LoginRequiredMixin, CreateView):
     template_name = 'photography/add_photography.html'
     model = Photography
     form_class = PhotographyForm
-    success_url = '/photography/'
+    success_url = '/photography/photography_list/'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -44,7 +44,7 @@ class EditPhotography(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     template_name = 'photography/edit_photography.html'
     model = Photography
     form_class = PhotographyForm
-    success_url = '/photography/'
+    success_url = '/photography/photography_list/'
 
     def test_func(self):
         return self.request.user == self.get_object().user
@@ -55,7 +55,7 @@ class DeletePhotography(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     Delete a photography post
     """
     model = Photography
-    success_url = '/photography/'
+    success_url = '/photography/photography_list/'
 
     def test_func(self):
         return self.request.user == self.get_object().user
