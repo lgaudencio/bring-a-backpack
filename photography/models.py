@@ -66,5 +66,5 @@ class Photography(models.Model):
         ordering = ['-date_posted']
 
     def __str__(self):
-        return str(self.title)
+        return str(self.post_title)
     
