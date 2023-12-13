@@ -95,3 +95,7 @@ img.profile-picture {
     object-fit: cover;
     border-radius: 50%;
 }
+
+div.photography-photos img {
+    padding: 25px;
+}
