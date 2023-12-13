@@ -8,7 +8,7 @@
     <div class="post-header">
         <h1 class="text-center">{{ photography.post_title }}</h1>
         <p class="text-center">Posted by {{ photography.user }} on {{ photography.date_posted }}</p>
-        <h2 class="text-center">{{ photography.post_brief }}</h2>
+        <h2 class="text-center p-4">{{ photography.post_brief }}</h2>
     </div>
     <div class="photography-photos text-center">
         <img src="{{ photography.main_photo.url }}" alt="{{ photography.main_photo_alt }}" class="main-pic">
