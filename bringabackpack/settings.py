@@ -16,7 +16,7 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-lgaudencio-bringabackpa-5ttqtx41eed.ws-eu106.gitpod.io', 'https://bring-a-backpack-7f3c85a6ca8a.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://8000-lgaudencio-bringabackpa-5ttqtx41eed.ws-eu107.gitpod.io', 'https://bring-a-backpack-7f3c85a6ca8a.herokuapp.com']
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
