@@ -35,6 +35,7 @@
             <div class="latest-destinations text-center mb-4">
                 <a href="{% url 'destination_full_review' destination.id %}"><h3>{{ destination.title }}</h3></a>
                 {{ destination.date_posted }}
+                {{profile.id}}
             </div>
             {% endfor %}
         </div>
@@ -44,7 +45,7 @@
         <!-- Modal content -->
         <div class="container modal-content">
         <span class="close">&times;</span>
-        <form method="POST" action="{% url 'edit_profile' request.user.id %}" enctype="multipart/form-data">
+        <form method="POST" action="{% url 'edit_profile' profile.id %}" enctype="multipart/form-data">
             <h3 class="text-center">Edit Profile</h3>
             {% csrf_token %}
             {{ form|crispy }}
