@@ -4,6 +4,9 @@ from .models import Photography
 
 @admin.register(Photography)
 class PhotographyAdmin(admin.ModelAdmin):
+    """ 
+    List for fields for photography post in admin panel
+    """
     list_display = (
         'post_title', 
         'post_brief', 
