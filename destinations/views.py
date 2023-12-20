@@ -4,6 +4,7 @@ from .forms import DestinationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.db.models import Q
+from django.contrib import messages
 
 class Destinations(ListView):
     """
@@ -58,6 +59,17 @@ class EditDestination(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     form_class = DestinationForm
     success_url = '/destinations/destinations/'
 
+    def form_valid(self, form):
+        """ 
+        Show toast on successful editing of destination review 
+        """
+        messages.success(
+            self.request,
+            'Changes Successfully Updated!'
+        )
+        return super(EditDestination, self).form_valid(form)
+
+
     def test_func(self):
         return self.request.user == self.get_object().user
 
@@ -68,6 +80,16 @@ class DeleteDestination(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
     model = Destination
     success_url = '/destinations/destinations/'
+
+    def form_valid(self, form):
+        """ 
+        Show toast message on successful deletion of a destination review
+        """
+        messages.success(
+            self.request,
+            'Successfully Deleted Destination Review'
+        )
+        return super(DeleteDestination, self).form_valid(form)
 
     def test_func(self):
         return self.request.user == self.get_object().user
