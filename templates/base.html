@@ -26,6 +26,14 @@
 <body>
     {% include 'includes/header.html' %}
 
+    {% if messages %}
+
+        {% for message in messages %}
+        {% include 'includes/toasts/toasts.html' %}
+        {% endfor %}
+   
+    {% endif %}
+
     <main>
         {% block content %}
         {% endblock %}
