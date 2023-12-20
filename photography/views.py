@@ -3,6 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from .models import Photography
 from .forms import PhotographyForm
+from django.contrib import messages
 
 
 class PhotographyList(ListView):
@@ -34,6 +35,11 @@ class AddPhotography(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        
+        messages.success(
+            self.request,
+            'Photography Post Successfully Created'
+        )
         return super(AddPhotography, self).form_valid(form)
 
 
@@ -46,6 +52,16 @@ class EditPhotography(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     form_class = PhotographyForm
     success_url = '/photography/photography_list/'
 
+    def form_valid(self, form):
+        """ 
+        Show toast on successful editing of photography post 
+        """
+        messages.success(
+            self.request,
+            'Changes Successfully Updated!'
+        )
+        return super(EditPhotography, self).form_valid(form)
+
     def test_func(self):
         return self.request.user == self.get_object().user
 
@@ -56,6 +72,16 @@ class DeletePhotography(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
     model = Photography
     success_url = '/photography/photography_list/'
+
+    def form_valid(self, form):
+        """ 
+        Show toast message on successful deletion of a photography post
+        """
+        messages.success(
+            self.request,
+            'Successfully Deleted Photography Post'
+        )
+        return super(DeleteDestination, self).form_valid(form)
 
     def test_func(self):
         return self.request.user == self.get_object().user
