@@ -47,6 +47,11 @@ class AddDestination(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+
+        messages.success(
+            self.request,
+            'Destination Review Successfully Created'
+        )
         return super(AddDestination, self).form_valid(form)
 
 
