@@ -82,6 +82,8 @@ As a user I want to be able to edit travel review entries so that I can add
 
 As a user I want to be able to delete a destination review entry 
 
+As a user I would like to receive feedback when I create, edit or delete a destination review so that I can see it has been successful
+
 As a user I want to be able to search for a specific destination so that I can save time by not needing to scroll down on recent destinations
 
 **EPIC 4 - Profiles**
@@ -92,6 +94,8 @@ As a user I want to edit my profile so that I can make changes when needed
 
 As a user I want to view another users profile so that I can see all their posted destination reviews 
 
+As a user I would like to receive feedback when I edit my profile so that I can see that it has been done successfully
+
 **EPIC 5 - Photography** 
 
 As a user I want to see photography posts by other users so that I can see how they have captured their visited destination 
@@ -101,6 +105,8 @@ As a user I want to be able to create photography posts so that I can share
 As a user I want to be able to edit my photography post so that I can add or delete any pictures 
 
 As a user I want to be able to delete a photography post
+
+As a user I would like to receive feedback when I create, edit and delete a photography posts so that I can see that it has been successful
 
 **EPIC 6 - Stand alone pages**
 
