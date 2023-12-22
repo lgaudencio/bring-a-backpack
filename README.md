@@ -23,13 +23,13 @@ The project had 8 main Epics (milestones):
 **EPIC 1 – Base Setup**
  
 The base setup epic is for all stories needed for the base set up of the application. Without the base setup, the app would not be possible, therefore it was the first epic to be delivered as all other features will depend on the completion of the base setup. 
- 
+
 **EPIC 2 – Authentication**
- 
+
 The authentication epic is for all stories that are related to the sign up, login and authorisation of views. Authorisation provides crucial and critical functionality, as without it, users would not be able to make a destination review and/or a photography post securely without the threat of other site users being able to edit or delete their review and/or photos.
- 
+
 **EPIC 3 – Destinations**
- 
+
 The destinations epic is for all stories that relate to creating, viewing, editing and deleting a destination review. This allows site visitors to view all destination reviews and it allows registered users to manage their own reviews by using a simple to use user interface.
 
 **EPIC 4 - Profiles**
