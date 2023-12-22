@@ -226,6 +226,14 @@ Implementation:
 On the destination review page, a delete button was added to the bottom of the review, this way the review owner is able to delete their destination review. This button will only be displayed if the user is logged in.
 
 
+USER STORY - As a user I would like to receive feedback when I create, edit or delete a destination review so that I can see it has been successful
+
+Implementation: 
+
+**Toasts**
+
+Custom toasts were added on when a destination review was successfully created, edited and deleted. These success messages are used to give feedback to the users that their request was successful. 
+
 USER STORY – As a user I want to be able to create photography posts so that I can share it with my community 
 
 Implementation:
@@ -262,6 +270,14 @@ Implementation:
 On the photography post page, a delete button was added to the bottom of the post, this way the review owner is able to delete their photography post. This button will only be displayed if the user is logged in.
 
 
+USER STORY - As a user I would like to receive feedback when I create, edit and delete a photography posts so that I can see that it has been successful
+
+Implementation: 
+
+**Toasts**
+
+Custom toasts were added on when a photography post was successfully created, edited and deleted. These success messages are used to give feedback to the users that their request was successful. 
+
 USER STORY – As a site user, I want to be able to search a photography post or a destination review, so that it saves users time from scrolling the page
 
 Implementation:
@@ -287,6 +303,15 @@ Implementation:
 **Edit Profile** 
 
 If the user wishes to change anything on their profile, they can navigate to the Profile link on the navbar and click on the Edit Profile button. Once clicked, this will open up a modal where the information can be updated. Once changes have been made, click on the Save Changes button at the bottom of the modal to update the profile. 
+
+
+USER STORY - As a user I would like to receive feedback when I edit my profile so that I can see that it has been done successfully
+
+Implementation:
+
+**Toasts**
+
+Custom toasts were added on when a user edits their profile. These success messages are used to give feedback to the users that their request was successful. 
 
 
 USER STORY – As a developer, I want users to identify the website tab if they have multiple tabs opened.
