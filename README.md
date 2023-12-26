@@ -366,6 +366,79 @@ A 500 error page has been implemented to provide feedback to users when an inter
 
 Users will be able to return back to the homepage via a button displayed on the 500 error page, thus eliminating the need to use the browsers back button.
 
+### The Skeleton Plane
+
+#### Wireframes
+
+* Homepage 
+
+![Homepage wireframe](docs/wireframes/homepage.png)
+
+* Sign up Page
+
+![Sign up page wireframe](docs/wireframes/signup.png)
+
+* Login Page
+
+![Login page wireframe](docs/wireframes/signin.png)
+
+* Logout Page
+
+![Logout page wireframe](docs/wireframes/signout.png)
+
+* View Destination Review 
+
+![View destination wireframe](docs/wireframes/viewdestination.png)
+
+* Create Destination Review 
+
+![Create destination review wireframe](docs/wireframes/adddestination.png)
+
+* Edit Destination Review
+
+![Edit destination wireframe](docs/wireframes/editdestination.png)
+
+* Delete Destination Review 
+
+![Delete destination wireframe](docs/wireframes/deletedestination.png)
+
+* View Photography Post 
+
+![View photography post wireframe](docs/wireframes/viewphoto.png)
+
+* Create Photography Post 
+
+![Create photography post wireframe](docs/wireframes/addphoto.png)
+
+* Edit Photography Post 
+
+![Edit photography post wireframe](docs/wireframes/edit-photo.png)
+
+* Delete Photography Post 
+
+![Delete photography post wireframe](docs/wireframes/deletephoto.png)
+
+* View Profile
+
+![View profile wireframe](docs/wireframes/profileview.png)
+
+* Edit Profile
+
+![Edit profile wireframe](docs/wireframes/editprofile.png)
+
+* 404 Error
+
+![404 error page wireframe](docs/wireframes/404-page.png)
+
+* 403 Error
+
+![403 error page wireframe](docs/wireframes/403-page.png)
+
+* 500 Error
+
+![500 error page wireframe](docs/wireframes/500-page.png)
+
+
 ### The Surface Plane
 
 #### Design 
