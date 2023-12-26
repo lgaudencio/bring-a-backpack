@@ -539,6 +539,49 @@ All images used across the website are my photographs taken from my own travels 
 * Favicon.io
     * Favicon files were created at [favicon.io](https://favicon.io/)
 
+
+**External Python Modules Used**
+
+* asgiref==3.7.2 - Installed as a dependency with another package
+
+* cloudinary==1.36.0 – Cloudinary was set up to store images used on the destination reviews, photography posts and profile pictures.
+
+* crispy-bootstrap5==2023.10 – This was installed to allow bootstrap5 use with crispy forms
+
+* dj-database-url==0.5.0 – Used to parse database url for production environment
+
+* dj3-cloudinary-storage==0.0.6 – Storage system to use with cloudinary
+
+* Django==4.2.6 – Framework used to build the application
+
+* django-allauth==0.58.1 – Used for the site authentication system, sign up, sign in, logout, ect.
+
+* django-crispy-forms==2.1 – Used to style the forms on render
+
+* django-resized==1.0.2 - Used for images on the website 
+
+* django-richtextfield==1.6.1 - Used for text fields on the website
+
+* fontawesomefree==6.4.2 – Font awesome was installed to add the social media icons to the footer of the website
+
+* gunicorn==21.2.0 – Installed as a dependency with another package
+
+* oauthlib==3.2.2 – Installed as a dependency with another package
+
+* Pillow==10.1.0 – Python image library used to upload and change images
+
+* psycopg2==2.9.9 – Needed for Heroku deployment
+
+* PyJWT==2.8.0 – Installed as a dependency with another package
+
+* python3-openid==3.2.0 – Installed as a dependency with another package
+
+* pytz==2023.3.post1 – Installed as a dependency with another package
+
+* requests-oauthlib==1.3.1 – Installed as a dependency with another package (allauth authentication)
+
+* sqlparse==0.4.4 – Installed as a dependency with another package
+
 ### Deployment 
 
 #### Version Control 
