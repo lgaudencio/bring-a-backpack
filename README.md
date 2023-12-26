@@ -167,6 +167,7 @@ The following are navigation items that are available on all pages around the we
 
 The navigation bar is displayed on all pages across the website and collapses into a hamburger menu on smaller devices. This will allow users on smaller devices to navigate around the website and it will not take up too much space.
 
+![Image of navbar](docs/readme_images/navbar.png)
 
 USER STORY – As a site owner I would like a homepage so that site users are greeted with a welcoming landing page explaining the site and has key links 
 
@@ -180,6 +181,10 @@ Under the heading, it will have information about the website and what it aims t
 
 Under the main information, the user will be presented with three links – Photography, Destinations and Contact. These links will serve as a quick way to the respective pages.
 
+![Image of website information on the homepage](docs/readme_images/front-1.png)
+
+![Image of quick links on the homepage](docs/readme_images/front-2.png)
+
 
 USER STORY – As a developer, I need to create a footer with social media links so that the user can keep up with new destination reviews across various social media platforms
 
@@ -188,6 +193,8 @@ Implementation:
 **Footer**
 
 A footer has been added to the bottom of the website, this will contain links to social media accounts, which are: Facebook, Instagram, X and Pinterest. These links are for site users to follow us on these platforms and keep up with news on recent photography posts and destination reviews. The social media icons have aria-labels added to ensure that users who use screen readers know the purpose of the links. Once clicked, they will open up in a new tab, as they lead users away from the site.
+
+![Image of footer](docs/readme_images/footer.png)
 
 
 USER STORY – As a user I want to be able to create new travel reviews so that I can share my travel experiences 
@@ -198,6 +205,8 @@ Implementation:
 
 A create destination review page was implemented to allow all site users the ability to add their own reviews via the UI without having to use the backend admin panel. This allows users to add destination reviews so it can be seen and read by all other site users, regardless of login status.
 
+![Image of create destination review](docs/readme_images/create-review.png)
+
 
 USER STORY – As a user I want to see all travel destination reviews so that I can decide whether to travel to that specific city/country 
 
@@ -206,6 +215,8 @@ Implementation:
 **View Destination Review Page**
 
 A destination review page has been implemented to allow site users to see all published destination reviews in order of date posted, that way the most recent reviews are shown first. The published destination reviews are visible to all site users, regardless of login status. It would not be user friendly to restrict this information from users to force them into signing in.
+
+![Image of the destination review(s)](docs/readme_images/review-page.png)
 
 
 USER STORY – As a user I want to be able to edit travel review entries so that I can add any new information 
@@ -216,6 +227,8 @@ Implementation:
 
 On the destination review page, an edit button was added to the bottom of the review, this way the review owner is able to edit their destination review. This button will only be displayed if the user is logged in.
 
+![Image of edit destination review](docs/readme_images/edit-review.png)
+
 
 USER STORY – As a user I want to be able to delete a destination review entry 
 
@@ -224,6 +237,8 @@ Implementation:
 **Delete Destination Review Page**
 
 On the destination review page, a delete button was added to the bottom of the review, this way the review owner is able to delete their destination review. This button will only be displayed if the user is logged in.
+
+![Image of delete destination review](docs/readme_images/delete-review.png)
 
 
 USER STORY - As a user I would like to receive feedback when I create, edit or delete a destination review so that I can see it has been successful
@@ -234,6 +249,9 @@ Implementation:
 
 Custom toasts were added on when a destination review was successfully created, edited and deleted. These success messages are used to give feedback to the users that their request was successful. 
 
+![Image of toast when a destination review is created, edited or deleted](docs/readme_images/toast-review.png)
+
+
 USER STORY – As a user I want to be able to create photography posts so that I can share it with my community 
 
 Implementation:
@@ -241,6 +259,8 @@ Implementation:
 **Create Photography Post**
 
 A create photography post page was implemented to allow all site users the ability to add their own photos via the UI without having to use the backend admin panel. This allows users to add photography posts so it can be seen and read by all other site users, regardless of login status.
+
+![Image of create a photography post](docs/readme_images/create-photography.png)
 
 
 USER STORY – As a user I want to see photography posts by other users so that I can see how they have captured their visited destination 
@@ -251,6 +271,8 @@ Implementation:
 
 A photography post page has been implemented to allow site users to see all published photo posts in order of date posted, that way the most recent reviews are shown first. The published posts are visible to all site users, regardless of login status. It would not be user friendly to restrict this information from users to force them into signing in.
 
+![Image of photography post(s)](docs/readme_images/photography-page.png)
+
 
 USER STORY – As a user I want to be able to edit my photography post so that I can add or delete any pictures 
 
@@ -259,6 +281,8 @@ Implementation:
 **Edit Photography Post**
 
 On the photography post page, an edit button was added to the bottom of the post, this way the review owner is able to edit their photos. This button will only be displayed if the user is logged in.
+
+![Image of edit photography post](docs/readme_images/edit-photography.png)
 
 
 USER STORY – As a user I want to be able to delete a destination review entry 
@@ -269,6 +293,8 @@ Implementation:
 
 On the photography post page, a delete button was added to the bottom of the post, this way the review owner is able to delete their photography post. This button will only be displayed if the user is logged in.
 
+![Image of delete photography post](docs/readme_images/delete-photography.png)
+
 
 USER STORY - As a user I would like to receive feedback when I create, edit and delete a photography posts so that I can see that it has been successful
 
@@ -277,6 +303,8 @@ Implementation:
 **Toasts**
 
 Custom toasts were added on when a photography post was successfully created, edited and deleted. These success messages are used to give feedback to the users that their request was successful. 
+
+![Image of toast created when a photography post is created, edited or deleted](docs/readme_images/toast-photography.png)
 
 USER STORY – As a site user, I want to be able to search a photography post or a destination review, so that it saves users time from scrolling the page
 
@@ -295,6 +323,8 @@ Implementation:
 
 Once the user is registered and logged in, a profile will automatically be created. It would be up to the user to go into their profile and complete it as they wish. To add information to their profile they can navigate to the Profile link on the navbar and click on the Edit Profile button. Once clicked, this will open up a modal where the information can be added. Once changes have been made, click on the Save Changes button at the bottom of the modal to fill in the profile. 
 
+![Image of the profile page](docs/readme_images/profile-view.png)
+
 
 USER STORY – As a user I want to edit my profile so that I can make changes when needed 
 
@@ -303,6 +333,8 @@ Implementation:
 **Edit Profile** 
 
 If the user wishes to change anything on their profile, they can navigate to the Profile link on the navbar and click on the Edit Profile button. Once clicked, this will open up a modal where the information can be updated. Once changes have been made, click on the Save Changes button at the bottom of the modal to update the profile. 
+
+![Image of edit profile](docs/readme_images/profile-edit.png)
 
 
 USER STORY - As a user I would like to receive feedback when I edit my profile so that I can see that it has been done successfully
@@ -313,6 +345,8 @@ Implementation:
 
 Custom toasts were added on when a user edits their profile. These success messages are used to give feedback to the users that their request was successful. 
 
+![Image of toast created when the profile is edited](docs/readme_images/profile-toast.png)
+
 
 USER STORY – As a developer, I want users to identify the website tab if they have multiple tabs opened.
 
@@ -321,6 +355,8 @@ Implementation:
 **Favicon**
 
 A site wide favicon was implemented, therefore, users will be able to easily identify the site amongst many tabs by the favicon image.
+
+![Image of the favicon](docs/readme_images/favicon.png)
 
 
 **Error Pages**
@@ -343,6 +379,8 @@ This covers:
 * Create Photography Post: Authorised to all signed in members  
 * Edit Photography Post: Authorised to all signed in members and only the publisher of the post can update their own photos
 * Delete Photography Post: Authorised to all signed in members and only the publisher of the post can delete their own post 
+
+![Image of 403 error](docs/readme_images/403.png)
 
 
 USER STORY - As a developer I need to implement a 404 error page so that users are alerted when they have landed on a page that does not exist 
