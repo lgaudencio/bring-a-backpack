@@ -540,6 +540,15 @@ All images used across the website are my photographs taken from my own travels 
     * Favicon files were created at [favicon.io](https://favicon.io/)
 
 
+**Python Modules Used**
+
+* Django Class based views (CreateView, ListView, DetailView, DeleteView, UpdateView) – These are used for the classes to create, read, update and delete.
+
+* Mixins (LoginRequiredMixin, UserPassesTestMixin) – These are used to enforce login required on views and test user is authorized to perform actions.
+
+* messages - This was used to pass messages to the toasts to display feedback to the users upon their actions. 
+
+
 **External Python Modules Used**
 
 * asgiref==3.7.2 - Installed as a dependency with another package
