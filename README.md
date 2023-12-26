@@ -539,6 +539,9 @@ All images used across the website are my photographs taken from my own travels 
 * Favicon.io
     * Favicon files were created at [favicon.io](https://favicon.io/)
 
+* Uizard 
+    * The wireframes were created using [Uizard](https://uizard.io/)
+
 
 **Python Modules Used**
 
