@@ -408,6 +408,8 @@ Users will be able to return back to the homepage via a button displayed on the 
 
 #### Wireframes
 
+##### Desktop Wireframes
+
 * Homepage 
 
 ![Homepage wireframe](docs/wireframes/homepage.png)
@@ -476,6 +478,75 @@ Users will be able to return back to the homepage via a button displayed on the 
 
 ![500 error page wireframe](docs/wireframes/500-page.png)
 
+##### Phone Wireframes
+
+* Homepage 
+
+![Homepage wireframe](docs/wireframes/homepage-wire-phone.png)
+
+* Sign up Page
+
+![Sign up page wireframe](docs/wireframes/signup-wire-phone.png)
+
+* Login Page
+
+![Login page wireframe](docs/wireframes/signin-wire-phone.png)
+
+* Logout Page
+
+![Logout page wireframe](docs/wireframes/signout-wire-phone.png)
+
+* View Destination Review 
+
+![View destination wireframe](docs/wireframes/viewdestination-wire-phone.png)
+
+* Create Destination Review 
+
+![Create destination review wireframe](docs/wireframes/addreview-wire-phone.png)
+
+* Edit Destination Review
+
+![Edit destination wireframe](docs/wireframes/editreview-wire-phone.png)
+
+* Delete Destination Review 
+
+![Delete destination wireframe](docs/wireframes/deletereview-wire-phone.png)
+
+* View Photography Post 
+
+![View photography post wireframe](docs/wireframes/viewphoto-wire-phone.png)
+
+* Create Photography Post 
+
+![Create photography post wireframe](docs/wireframes/addphoto-wire-phone.png)
+
+* Edit Destination Review
+
+![Edit destination wireframe](docs/wireframes/editphoto-wire-phone.png)
+
+* Delete Photography Post 
+
+![Delete photography post wireframe](docs/wireframes/deletephoto-wire-phone.png)
+
+* View Profile
+
+![View profile wireframe](docs/wireframes/profileview-wire-phone.png)
+
+* Edit Profile
+
+![Edit profile wireframe](docs/wireframes/editprofile-wire-phone.png)
+
+* 404 Error
+
+![404 error page wireframe](docs/wireframes/404-wire-phone.png)
+
+* 403 Error
+
+![403 error page wireframe](docs/wireframes/403-wire-phone.png)
+
+* 500 Error
+
+![500 error page wireframe](docs/wireframes/500-wire-phone.png)
 
 ### The Surface Plane
 
