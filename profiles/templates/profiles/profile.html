@@ -25,7 +25,7 @@
             {% endif %}
 
             {% if request.user == profile.user %}
-                <button id="myBtn" class="btn btn-dark w-25 p-2 mb-3">Edit Profile</button>
+                <button id="myBtn" class="btn btn-dark w-50 p-2 mb-3">Edit Profile</button>
             {% endif %}
             
         </div>
@@ -51,7 +51,7 @@
             {{ form|crispy }}
             {{ form.media }}
             <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-dark w-25 p-2 mb-3">Save Changes</button>
+                <button type="submit" class="btn btn-dark w-50 p-2 mb-3">Save Changes</button>
             </div>
         </form>
         </div>
