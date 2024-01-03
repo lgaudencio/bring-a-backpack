@@ -13,7 +13,7 @@
         <img src="{{ destination.photo.url }}" alt="{{ destination.photo_alt }}" class="review-pic">
     </div>
     <div class="review-entry text-center">
-        <p>{{ destination.review|safe }}</p>
+        {{ destination.review|safe }}
     </div>
     {% if request.user == destination.user %}
     <div class="text-center">
