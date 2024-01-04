@@ -15,9 +15,9 @@ class DestinationForm(forms.ModelForm):
             'brief': forms.Textarea(attrs={'rows': 3}),
         }
         labels = {
-            'title': 'Review Title', 
+            'title': 'Review Title',
             'brief': 'Brief Review Description',
-            'photo': 'Review Photo', 
-            'photo_alt': 'Describe Review Photo', 
+            'photo': 'Review Photo',
+            'photo_alt': 'Describe Review Photo',
             'review': 'Full Review'
         }
