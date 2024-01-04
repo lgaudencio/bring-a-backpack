@@ -3,15 +3,15 @@ from .models import Photography
 
 
 class PhotographyForm(forms.ModelForm):
-    """ 
+    """
     Form used to create a photography post
     """
     class Meta:
         model = Photography
         fields = [
-            'post_title', 
-            'post_brief', 
-            'main_photo', 
+            'post_title',
+            'post_brief',
+            'main_photo',
             'main_photo_alt',
             'photo_1',
             'photo_1_alt',
