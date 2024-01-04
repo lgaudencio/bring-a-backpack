@@ -26,7 +26,7 @@ class EditProfile(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     Edit a profile
     """
     form_class = ProfileForm
-    model = Profile 
+    model = Profile
 
     def form_valid(self, form):
         self.success_url = f"/profiles/user/{self.request.user.username}"
