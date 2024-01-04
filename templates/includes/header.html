@@ -2,9 +2,11 @@
 
 <header>
     {% with request.resolver_match.url_name as url_name %}
+      <!-- Nav menu -->
       <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
           <div class="logo-picture">
+            <!-- Logo -->
             <a class="navbar-brand" href="{% url 'reviewsite' %}">
               <img src="{% static 'images/logo.png' %}" alt="Logo" width="250">
             </a>
@@ -12,6 +14,7 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Nav Items -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -39,6 +42,7 @@
                   </li>
                 </ul>
               </li>
+              <!-- Show Profile and Logout items if the user is logged in -->
               {% if request.user.is_authenticated %}
               <li class="nav-item">
                 <a class="nav-link {% if url_name == 'profile' %}active{% endif %}" href="{% url 'profile' request.user.username %}">PROFILE</a>
@@ -46,6 +50,7 @@
               <li class="nav-item">
                 <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}" href="/accounts/logout/">LOGOUT</a>
               </li>
+              <!-- Show Login and Register items if the user is logged out -->
               {% else %}
               <li class="nav-item">
                 <a class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}" href="/accounts/login/">LOGIN</a>
@@ -55,6 +60,7 @@
               </li>
               {% endif %}
             </ul>
+            <!-- Search bar to search for destination reviews -->
             <form class="d-flex" role="search" method="GET" action="{% url 'destinations' %}">
                 <input class="form-control me-2" name="q" type="search" placeholder="Search a destination..." aria-label="Search">
                 <button class="btn btn-outline-dark" type="submit">Search</button>
