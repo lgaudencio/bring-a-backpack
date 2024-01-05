@@ -4,6 +4,7 @@
 {% block title %}Profile - {{profile.user.username}}{% endblock %}
 
 {% block content %}
+<!-- The Profile view-->
 <div class="container">
     <div class="profile">
         <div class="user-info text-center">
@@ -40,9 +41,9 @@
             {% endfor %}
         </div>
     </div>
-    <!-- The Modal -->
+    <!-- The edit modal -->
     <div id="myModal" class="modal">
-        <!-- Modal content -->
+        <!-- Edit form -->
         <div class="container modal-content">
         <span class="close">&times;</span>
         <form method="POST" action="{% url 'edit_profile' profile.id %}" enctype="multipart/form-data">
