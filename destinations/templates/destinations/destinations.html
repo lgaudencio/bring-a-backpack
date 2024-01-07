@@ -13,7 +13,7 @@
       <img src="{{destination.photo.url}}" class="img-fluid" alt="{{destination.photo_alt}}">
       <div class="text-center card-body">
         <h3 class="card-text">{{destination.brief}}</h3>
-        <h4 class="card-text">{{destination.review|truncatechars:100|safe}}</h4>
+        {{destination.review|truncatechars:175|safe}}
         <a href="{% url 'destination_full_review' destination.id %}" class="btn btn-dark w-75 p-2 mb-3">Continue Reading...</a>
       </div>
     </div>
