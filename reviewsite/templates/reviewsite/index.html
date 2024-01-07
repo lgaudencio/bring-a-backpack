@@ -23,30 +23,28 @@
             Adventure awaits – start your journey with Bring a Backpack today!
         </p>
     </section>
-    <section>
-        <div class="container text-center p-4">
-            <div class="row">
-              <a href="{% url 'destinations' %}" class="col pb-5">
-                <img class="quick-link" src="{% static 'images/warsaw.JPG' %}" style="width: 350px;" alt="">
-                <div class="top-centered">
-                  Recent in Travel
-                </div>
-              </a>
-              <a href="{% url 'photography_list' %}" class="col pb-5">
-                <img class="quick-link" src="{% static 'images/salzburg.JPG' %}" style="width: 350px;" alt="">
-                <div class="top-centered">
-                  Photography
-                </div>
-              </a>
-              <a href="" class="col pb-5">
-                <img class="quick-link" src="{% static 'images/copenhagen.JPG' %}" style="width: 350px;" alt="">
-                <div class="top-centered">
-                  Contact
-                </div>
-              </a>
-            </div>
+    <div class="container text-center p-4">
+      <div class="row">
+        <a href="{% url 'destinations' %}" class="col pb-5">
+          <img class="quick-link" src="{% static 'images/warsaw.JPG' %}" style="width: 350px;" alt="">
+          <div class="top-centered">
+            Recent in Travel
           </div>
-    </section>
+        </a>
+        <a href="{% url 'photography_list' %}" class="col pb-5">
+          <img class="quick-link" src="{% static 'images/salzburg.JPG' %}" style="width: 350px;" alt="">
+            <div class="top-centered">
+              Photography
+            </div>
+        </a>
+        <a href="" class="col pb-5">
+          <img class="quick-link" src="{% static 'images/copenhagen.JPG' %}" style="width: 350px;" alt="">
+            <div class="top-centered">
+              Contact
+            </div>
+        </a>
+      </div>
+    </div>
 </div>
 
 {% endblock %}
