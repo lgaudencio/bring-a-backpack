@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'destinations',
     'profiles',
     'photography',
+    'contact',
 
     # Crispy
     'crispy_forms',
