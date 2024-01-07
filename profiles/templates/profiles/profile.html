@@ -36,7 +36,6 @@
             <div class="latest-destinations text-center mb-4">
                 <a href="{% url 'destination_full_review' destination.id %}"><h3>{{ destination.title }}</h3></a>
                 {{ destination.date_posted }}
-                {{profile.id}}
             </div>
             {% endfor %}
         </div>
