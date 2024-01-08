@@ -687,6 +687,24 @@ Testing was conducted to ensure that the following criteria points were met:
 
 * WCAG 2.1 Coding best practices have been followed
 
+#### Validator Testing
+
+All pages were run through the W3 HTML Validator. Initially, some error were flagged due to double ending p tags because the RichTextFields were wrapped with p tags. All of these issues were corrected and all pages passed validation. 
+
+Due to the Django templating language code used in the HTML files, it could not just be copied and pasted into the validator and due to the secured views snd pages with login required cannot be validated by direct URL. To test the validation of the files, the webpage must be opened, right click and view page source. Paste te raw HTML code into the validator as this will be only the HTML rendered code. 
+
+![Image for HTML validator](docs/readme_images/html-validator.png)
+
+All pages were run through a PEP8 validator to ensure all code was PEP8 compliant. Initially, some errors were flagged due to trailing white space, lines too long and 1 line instead of 2 expected. All these errors were corrected and the code passed through the validator with no issues. There was however one exception, which was the settings.py file. 
+
+The Django auto generated code for AUTH_PASSWORD_VALIDATORS and the STATICFILES_STORAGE for cloudinary ere showing up as too long. I could not find a way to split these lines but since they were auto generated and not my own custom code, I hope this is acceptable.
+
+![Image for PEP8 validator](docs/readme_images/pep8.png)
+
+The JavaScript code used was run through JSHINT JavaScript validator. The only issues it raised was missing semicolons, which were corrected. The only warning that remained was regarding ES6.
+
+![Image for JavaScript validator](docs/readme_images/jshint.png)
+
 ### Deployment 
 
 #### Version Control 
