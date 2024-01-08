@@ -112,3 +112,8 @@ img.profile-picture {
 div.photography-photos img {
     padding: 25px;
 }
+
+img.main-pic, img.post-pic {
+    max-width: 100%;
+    max-height: 100%;
+}
