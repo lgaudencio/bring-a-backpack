@@ -722,3 +722,70 @@ The following git commands were used throughout development to push the code to 
 * *git commit -m “commit message”* – This command was used to commit changes to the local repository queue ready for the final step.
 
 * *git push* – This command was used to push all committed code to the remote repository on GitHub.
+
+#### Heroku Deployment 
+
+The site was deployed to Heroku. The steps to deploy are as follows: 
+
+* Navigate to the Heroku website and create an account 
+
+* Click the new button in the top right corner 
+
+* Select create new app
+
+* Enter app name
+
+* Select region and click create app 
+
+* Click the resources tab and search for Heroku Postgres 
+
+* Select hobby dev and continue 
+
+* Go to the settings tab and then click reveal config vars
+
+* Add the following config vars: 
+    * SECRET_KEY: (Your secret key)
+    * DATABASE_URL: (This should already exist with add on of Postgres)
+    * EMAIL_HOST_USER: (Email address)
+    * EMAIL_HOST_PASS: (Email app password)
+    * CLOUDINARY_URL: (Cloudinary api url)
+
+* Click the deploy tab
+
+* Scroll down to GitHub and sign in/authorise when prompted
+
+* In the search box, find the repository you want to deploy and click connect
+
+* Scroll down to Manual deploy and choose the main branch 
+
+* Click deploy 
+
+The app should now be displayed successfully. 
+
+Link to the live site can be found here: Live Site 
+
+#### Run Locally 
+
+Navigate to the GitHub Repository you want to clone to use locally: 
+
+* Click on the code drop down button
+
+* Click on HTTPS
+
+* Copy the repository link to the clipboard
+
+* Open your IDE of choice (git must be installed for the next step)
+
+* Type git clone copied-git-url into the IDE terminal 
+
+The project will now have been cloned on your local machine for use. 
+
+#### Fork Project 
+
+Most commonly, forks are used to either propose changes to someone else’s project or to use someone else’s project as a starting point for your own idea. You can fork a project by doing the following: 
+
+* Navigate to the GitHub Repository you want to fork 
+
+* Not he top right of the page under the header, click the fork button
+
+* This will create a duplicate of the full project in your GitHub Repository 
