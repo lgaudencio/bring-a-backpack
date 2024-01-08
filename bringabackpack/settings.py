@@ -40,8 +40,10 @@ DEBUG = "DEVELOPMENT"
 
 ALLOWED_HOSTS = [
     '8000-lgaudencio-bringabackpa-5ttqtx41eed.ws-eu107.gitpod.io',
-    'localhost'
+    'localhost', 'bring-a-backpack-7f3c85a6ca8a.herokuapp.com'
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://bring-a-backpack-7f3c85a6ca8a.herokuapp.com']
 
 
 # Application definition
