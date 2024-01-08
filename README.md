@@ -404,6 +404,10 @@ A 500 error page has been implemented to provide feedback to users when an inter
 
 Users will be able to return back to the homepage via a button displayed on the 500 error page, thus eliminating the need to use the browsers back button.
 
+##### Features Left To Implement 
+
+In a future release I would like to implement a hacks page. At the moment, the website has a section on destination reviews which gives an insight on how travellers found a certain city/country. It also has a photography section so travellers could share their travel shots. With a hacks page, travellers can share hacks with other users, which could included budget tips, good deals or best way to get from the airport to the city center. This feature would be an additional bonus to what the website already offers. 
+
 ### The Skeleton Plane
 
 #### Wireframes
