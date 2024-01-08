@@ -213,6 +213,8 @@ LOGIN_REDIRECT_URL = '/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
+
 STATIC_URL = '/static/'
 if 'DEVELOPMENT' in os.environ:
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
