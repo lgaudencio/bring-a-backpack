@@ -665,6 +665,28 @@ All images used across the website are my photographs taken from my own travels 
 
 * sqlparse==0.4.4 – Installed as a dependency with another package
 
+### Testing 
+
+#### Accessibility 
+
+The [Wave Accessibility](https://wave.webaim.org/) tool was used throughout development and for final testing of the deployed website to check for any aid accessibility testing. 
+
+Testing was conducted to ensure that the following criteria points were met:
+
+* All forms have associated labels or aria-labels so that this is read out on a screen reader to users who tab to form inputs
+
+* Colour contrasts on the site meet a minimum ratio this is specified on the [WCAG 2.1 Contrast Guidelines](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
+
+* Headings levels are not missed or skipped, this is to ensure the importance of content is relayed correctly to the user
+
+* All content is contained within landmarks to ensure ease of use for assistive technology, this will allow the user to navigate by page regions
+
+* All HTML pages have a lang attribute set
+
+* Aria properties have been implemented correctly 
+
+* WCAG 2.1 Coding best practices have been followed
+
 ### Deployment 
 
 #### Version Control 
