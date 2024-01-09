@@ -669,6 +669,8 @@ All images used across the website are my photographs taken from my own travels 
 
 * sqlparse==0.4.4 – Installed as a dependency with another package
 
+* whitenoise==6.6.0 - Used to serve static files directly without use of static resources like cloudinary 
+
 ### Testing 
 
 #### Functional Testing
