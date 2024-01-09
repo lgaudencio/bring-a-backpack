@@ -83,7 +83,7 @@ class DeletePhotography(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             self.request,
             'Successfully Deleted Photography Post'
         )
-        return super(DeleteDestination, self).form_valid(form)
+        return super(DeletePhotography, self).form_valid(form)
 
     def test_func(self):
         return self.request.user == self.get_object().user
