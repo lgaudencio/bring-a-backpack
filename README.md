@@ -558,7 +558,7 @@ In a future release I would like to implement a hacks page. At the moment, the w
 
 ![500 error page wireframe](docs/wireframes/500-wire-phone.png)
 
-<details>
+</details>
 
 #### Database Design
 
