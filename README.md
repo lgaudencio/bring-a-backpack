@@ -393,6 +393,8 @@ A 404 error page has been implemented to provide feedback to users when they hav
 
 Users will be able to return back to the homepage via a button displayed on the 404 error page, thus eliminating the need to use the browsers back button.
 
+![Image of the 404 error](docs/readme_images/404.png)
+
 
 USER STORY - As a developer I need to implement a 500 error page so that users are alerted when an internal server error occurs
 
@@ -403,6 +405,8 @@ Implementation:
 A 500 error page has been implemented to provide feedback to users when an internal server error occurs. 
 
 Users will be able to return back to the homepage via a button displayed on the 500 error page, thus eliminating the need to use the browsers back button.
+
+![Image of the 500 error](docs/readme_images/500.png)
 
 ##### Features Left To Implement 
 
