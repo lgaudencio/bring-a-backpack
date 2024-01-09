@@ -1,1 +1,14 @@
-<h1>Contact</h1>
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+<div class="contact-container text-center">
+    <p>Any Enquiries?</p>
+    <p>Feel free to pop us an email via the email below the image...</p>
+    <img class="contact-image" src="{% static 'images/uppsala.JPG' %}" style="width: 350px;" alt="Me during snowfall in Uppsala, Sweden">
+    <p>hello[at]bringabackpack.travel</p>
+</div>
+
+{% endblock %}
