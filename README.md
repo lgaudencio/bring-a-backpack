@@ -781,3 +781,15 @@ Most commonly, forks are used to either propose changes to someone else’s proj
 * Not he top right of the page under the header, click the fork button
 
 * This will create a duplicate of the full project in your GitHub Repository 
+
+### Credits
+
+[Open AI: ChatGPT-3.5](https://chat.openai.com/auth/login) - This AI tool is credited for producing the text seen on the homepage and the destination reviews. 
+
+[Codu: Securing Django View from Unauthorized Access](https://www.codu.co/articles/securing-django-views-from-unauthorized-access-npyb3to_) - This article is credited for the mixin used in the project for destination reviews, photography posts and profiles. 
+
+[Codu: Resizing images and converting formats in Django](https://www.codu.co/articles/resizing-images-and-converting-formats-in-django-1rj9kdho) - This article is credited for the images used across this project in destination reviews, photography posts and profiles. 
+
+[W3School: How TO - CSS/JS Modal](https://www.w3schools.com/howto/howto_css_modals.asp) - This website is credited for the modal used in editing the profile. 
+
+[YouTube: @IonaFrisbee](https://www.youtube.com/@IonaFrisbee) - This YouTube channel is credited for being a guide on Views. 
