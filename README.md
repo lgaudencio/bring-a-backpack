@@ -560,6 +560,12 @@ An entity relationship diagram was created using [DBeaver](https://dbeaver.io/) 
 
 ![Database schema using DBeaver](docs/readme_images/database.png)
 
+#### Security
+
+View were secured by using the built-in Django class based view mixin - UserPassesTestMixin. A test function was created in the necessary classes to use the mixin and checks were ran to ensure that the user trying to access the specific page was authorised to do so. All restrictions, such as edit/delete functionalities listed in the features section was secured bu using this method. 
+
+Environment variables were stored in an env.py for local development for security purposes, this is to ensure no secret keys, API keys or sensitive information was added to the repository. 
+
 ### The Surface Plane
 
 #### Design 
