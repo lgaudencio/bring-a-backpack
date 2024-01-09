@@ -552,6 +552,14 @@ In a future release I would like to implement a hacks page. At the moment, the w
 
 ![500 error page wireframe](docs/wireframes/500-wire-phone.png)
 
+#### Database Design
+
+The database was designed to allow CRUD functionality, which is available to users when they are signed in. The user model is at the heart of the application as it is connected to the destination reviews, photography posts and profile, linked by primary/foreign key relationship. 
+
+An entity relationship diagram was created using [DBeaver](https://dbeaver.io/) and shows the schemas for each of the models and how they are related. 
+
+![Database schema using DBeaver](docs/readme_images/database.png)
+
 ### The Surface Plane
 
 #### Design 
