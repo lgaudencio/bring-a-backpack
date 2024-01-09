@@ -412,7 +412,9 @@ In a future release I would like to implement a hacks page. At the moment, the w
 
 #### Wireframes
 
-##### Desktop Wireframes
+<details>
+
+<summary>Desktop Wireframes</summary>
 
 * Homepage 
 
@@ -482,7 +484,11 @@ In a future release I would like to implement a hacks page. At the moment, the w
 
 ![500 error page wireframe](docs/wireframes/500-page.png)
 
-##### Phone Wireframes
+</details>
+
+<details>
+
+<summary>Mobile Wireframes</summary>
 
 * Homepage 
 
@@ -551,6 +557,8 @@ In a future release I would like to implement a hacks page. At the moment, the w
 * 500 Error
 
 ![500 error page wireframe](docs/wireframes/500-wire-phone.png)
+
+<details>
 
 #### Database Design
 
