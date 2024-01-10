@@ -78,6 +78,12 @@ The JavaScript code used was run through JSHINT JavaScript validator. The only i
 
 ![Image for JavaScript validator](docs/readme_images/jshint.png)
 
+## Lighthouse Report
+
+The lighthouse report gave a score of 93, 100, 100, 100.
+
+![Lighthouse report image](docs/readme_images/lighthouse.png)
+
 ## Responsiveness
 
 During the styling phase for media queries, all pages were tested to ensure responsiveness on screen sizes from 280px and upwards. All pages were tested on Chrome, Safari and Edge browsers.
