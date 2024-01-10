@@ -2,6 +2,8 @@
 
 Bring a Backpack is a site for reviewing travel destinations and photography sharing. Users from around the world can sign up and add their travel reviews to the website and share their photography skills with other travel enthusiasts and helpfully help other users decide on their next journey. The site provides users with a simple and easy system to write their reviews, upload pictures and customise their profile. The live link to the site can be found here: Live Site - Bring a Backpack
 
+![Mock Up](docs/readme_images/mockup.png)
+
 ## User Experience Design
 
 ### The Strategy Plane
