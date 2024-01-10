@@ -58,6 +58,8 @@ Testing was conducted to ensure that the following criteria points were met:
 
 * WCAG 2.1 Coding best practices have been followed
 
+![Wave accessibility image](docs/readme_images/wave.png)
+
 ## Validator Testing
 
 All pages were run through the W3 HTML Validator. Initially, some error were flagged due to double ending p tags because the RichTextFields were wrapped with p tags. All of these issues were corrected and all pages passed validation. 
