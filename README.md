@@ -118,6 +118,8 @@ As a developer I need to implement a 404 error page so that users are alert
 
 As a developer I need to implement a 500 error page so that users are alerted when an internal server error occurs
 
+As a user I would like to be able to send a message to the site owner so that I can have any travel enquiry answered
+
 **EPIC 7 - Deployment** 
 
 As a developer I need to deploy the project to heroku so that it is live for users 
@@ -335,6 +337,17 @@ Implementation:
 If the user wishes to change anything on their profile, they can navigate to the Profile link on the navbar and click on the Edit Profile button. Once clicked, this will open up a modal where the information can be updated. Once changes have been made, click on the Save Changes button at the bottom of the modal to update the profile. 
 
 ![Image of edit profile](docs/readme_images/profile-edit.png)
+
+
+USER STORY - As a user I would like to be able to send a message to the site owner so that I can have any travel enquiry answered
+
+Implementation:
+
+**Contact Page**
+
+If any site user would like to contact the site owner, they can navigate to the Contact link on the navbar, click on Contact and they will be directed to the contact page. On this contact page, site users will be presented with an email address to send any enquires they may have over to the site owner. 
+
+![Image of contact page](docs/readme_images/contact.png)
 
 
 USER STORY - As a user I would like to receive feedback when I edit my profile so that I can see that it has been done successfully
