@@ -109,12 +109,12 @@ img.profile-picture {
     border-radius: 50%;
 }
 
-/* Images for photography posts */
+/* Images for photography posts and destination review picture*/
 div.photography-photos img {
     padding: 25px;
 }
 
-img.main-pic, img.post-pic {
+img.main-pic, img.post-pic, img.review-pic {
     max-width: 100%;
     max-height: 100%;
 }
