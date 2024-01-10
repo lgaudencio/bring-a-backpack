@@ -489,6 +489,10 @@ In a future release I would like to implement a hacks page. At the moment, the w
 
 ![Edit profile wireframe](docs/wireframes/editprofile.png)
 
+* Contact Page
+
+![Contact page wireframe](docs/wireframes/comtact-page.png)
+
 * 404 Error
 
 ![404 error page wireframe](docs/wireframes/404-page.png)
@@ -562,6 +566,10 @@ In a future release I would like to implement a hacks page. At the moment, the w
 * Edit Profile
 
 ![Edit profile wireframe](docs/wireframes/editprofile-wire-phone.png)
+
+* Contact Page
+
+![Contact page wireframe](docs/wireframes/contact-wire-phone.png)
 
 * 404 Error
 
