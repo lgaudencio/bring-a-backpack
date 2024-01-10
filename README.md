@@ -16,7 +16,11 @@ The site is aimed at all travel enthusiasts who are planning their next adventur
 
 This project was developed using agile methodologies, delivering small features at a time. All projects were assigned to epics, prioritised under labels - Must have, Should have and Could have. The core project requirements were given the ‘Must have’ label to ensure they were prioritised and completed before moving onto the requirements that had the other two labels. 
 
-The Kanban board was created using Github projects and can be seen here and can be viewed to see more information on the project cards. Most stories will have acceptance criteria to define its function, once the function has been met, it is then marked off as completed. 
+The Kanban board was created using Github projects and can be seen [here](https://github.com/users/lgaudencio/projects/3/views/1) and can be viewed to see more information on the project cards. Most stories will have acceptance criteria to define its function, once the function has been met, it is then marked off as completed. 
+
+As can be seen on the below image of the Kanban board, there is a section on the right called "Won't do", these are tasks which will be done for a later release. More on this later release in the section called Features Left to Implement. 
+
+![Image of kanban board](docs/readme_images/kanban.png)
 
 ##### Epics
 
