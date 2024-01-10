@@ -75,3 +75,29 @@ The Django auto generated code for AUTH_PASSWORD_VALIDATORS and the STATICFILES_
 The JavaScript code used was run through JSHINT JavaScript validator. The only issues it raised was missing semicolons, which were corrected. The only warning that remained was regarding ES6.
 
 ![Image for JavaScript validator](docs/readme_images/jshint.png)
+
+## Responsiveness
+
+During the styling phase for media queries, all pages were tested to ensure responsiveness on screen sizes from 280px and upwards. All pages were tested on Chrome, Safari and Edge browsers.
+
+Steps to test:
+
+* Open a browser and go to [website](https://bring-a-backpack-7f3c85a6ca8a.herokuapp.com/)
+* Right click on the page and select 'Inspect', this will open up developer tools.
+* Decrease the screen size to 280px.
+* Click and drag the responsive window to set the width for testing.
+
+Expected:
+
+Website is to be responsive on all screen sizes and no images/logos are to be pixelated or distorted due to stretching. No horizontal scroll appears on mobile devices and nothing overlaps.
+
+Actual:
+
+Website behaved as expected.
+
+The website was tested for its responsiveness on the following devices and no issues were observed:
+
+* Samsung Galaxy Fold
+* iPad Air
+* Surface Pro 7
+* Nexus 10
