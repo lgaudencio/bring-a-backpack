@@ -1,6 +1,6 @@
 # Bring a Backpack
 
-Bring a Backpack is a site for reviewing travel destinations and photography sharing. Users from around the world can sign up and add their travel reviews to the website and share their photography skills with other travel enthusiasts and helpfully help other users decide on their next journey. The site provides users with a simple and easy system to write their reviews, upload pictures and customise their profile. The live link to the site can be found here: Live Site - Bring a Backpack
+Bring a Backpack is a site for reviewing travel destinations and photography sharing. Users from around the world can sign up and add their travel reviews to the website and share their photography skills with other travel enthusiasts and helpfully help other users decide on their next journey. The site provides users with a simple and easy system to write their reviews, upload pictures and customise their profile. The live link to the site can be found here: [Live Site - Bring a Backpack](https://bring-a-backpack-7f3c85a6ca8a.herokuapp.com/)
 
 ![Mock Up](docs/readme_images/mockup.png)
 
@@ -781,7 +781,7 @@ The site was deployed to Heroku. The steps to deploy are as follows:
 
 The app should now be displayed successfully. 
 
-Link to the live site can be found here: Live Site 
+Link to the live site can be found here: [Live Site](https://bring-a-backpack-7f3c85a6ca8a.herokuapp.com/) 
 
 #### Run Locally 
 
@@ -820,3 +820,5 @@ Most commonly, forks are used to either propose changes to someone else’s proj
 [W3School: How TO - CSS/JS Modal](https://www.w3schools.com/howto/howto_css_modals.asp) - This website is credited for the modal used in editing the profile. 
 
 [YouTube: @IonaFrisbee](https://www.youtube.com/@IonaFrisbee) - This YouTube channel is credited for being a guide on Views. 
+
+[Stack Overflow: ImageField](https://stackoverflow.com/questions/26298821/django-testing-model-with-imagefield) - This post on Stack Overflow is credited in helping with unit testing when it came to images used in the website. 
