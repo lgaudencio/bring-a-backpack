@@ -18,7 +18,7 @@ if os.path.isfile('env.py'):
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-lgaudencio-bringabackpa-5ttqtx41eed.ws-eu107.gitpod.io',
+    'https://8000-lgaudencio-bringabackpa-a1zqcax9g31.ws-eu107.gitpod.io',
     'https://bring-a-backpack-7f3c85a6ca8a.herokuapp.com'
 ]
 
@@ -38,7 +38,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    '8000-lgaudencio-bringabackpa-5ttqtx41eed.ws-eu107.gitpod.io',
+    '8000-lgaudencio-bringabackpa-a1zqcax9g31.ws-eu107.gitpod.io',
     'localhost', 'bring-a-backpack-7f3c85a6ca8a.herokuapp.com'
 ]
 
