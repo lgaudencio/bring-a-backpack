@@ -55,3 +55,23 @@ class TestViews(TestCase):
         response = self.client.get('/photography/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'photography/add_photography.html')
+
+
+class TestViewsRedirect(TestCase):
+    """
+    Test views when not logged in
+    """
+    def test_create_photography_post_redirect(self):
+        """ Create photography post test """
+        response = self.client.get('/photography/')
+        self.assertEqual(response.status_code, 302)
+
+    def test_edit_photography_post_redirect(self):
+        """ Edit photography post test """
+        response = self.client.get('/photography/edit/5/')
+        self.assertEqual(response.status_code, 302)
+
+    def test_delete_photography_post_redirect(self):
+        """ Delete photography post test """
+        response = self.client.get('/photography/delete/5/')
+        self.assertEqual(response.status_code, 302)
