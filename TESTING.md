@@ -38,6 +38,14 @@
 | Test that any site user can view the contact page regardless of sign in status (User Story #18)       | Testing was performed both by being signed out and signed in. The Contact link on the navbar was clicked and navigates to the corresponding page                                                                                                                                                                                                         | When the Contact page is clciked, it gets directed to the correct page as expected                                                                                                                     | Pass      |
 |                                                                                                       |                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                        |           |
 
+## Unit Testing
+
+Unit tests were created to test some basic functionality such as templates used and redirects. These tests can be found in the tests.py files of the respective apps.
+
+Results:
+
+![Unit testing results](docs/readme_images/unit-testing.png)
+
 ## Accessibility 
 
 The [Wave Accessibility](https://wave.webaim.org/) tool was used throughout development and for final testing of the deployed website to check for any aid accessibility testing. 
