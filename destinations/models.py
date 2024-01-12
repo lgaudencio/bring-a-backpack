@@ -23,6 +23,7 @@ class Destination(models.Model):
     date_posted = models.DateTimeField(auto_now=True)
 
     class Meta:
+        """Order by the date posted"""
         ordering = ['-date_posted']
 
     def __str__(self):
