@@ -1,5 +1,5 @@
 from django.test import TestCase
-from django.contrib.auth import get_user_model 
+from django.contrib.auth import get_user_model
 from .models import Photography
 import tempfile
 
@@ -13,7 +13,7 @@ class TestViews(TestCase):
         username = "LFG"
         password = "Benfica24"
         user_model = get_user_model()
-        
+
         # Create user
         self.user = user_model.objects.create_user(
             username=username,

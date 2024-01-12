@@ -1,5 +1,5 @@
 from django.test import TestCase
-from django.contrib.auth import get_user_model 
+from django.contrib.auth import get_user_model
 from .models import Destination
 import tempfile
 
@@ -13,7 +13,7 @@ class TestViews(TestCase):
         username = "LFG"
         password = "Benfica24"
         user_model = get_user_model()
-        
+
         # Create user
         self.user = user_model.objects.create_user(
             username=username,
@@ -30,7 +30,7 @@ class TestViews(TestCase):
             brief="A little description",
             photo=tempfile.NamedTemporaryFile(suffix=".jpg").name,
             photo_alt="A test image",
-            review="A simple review about the city, country mentioned in title",
+            review="A review about the city, country mentioned in title",
             )
 
     def test_create_destination_review_page(self):
@@ -49,11 +49,13 @@ class TestViews(TestCase):
         """ Delete destination review when logged in """
         response = self.client.get('/destinations/delete/1/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'destinations/destination_confirm_delete.html')
+        self.assertTemplateUsed(
+            response, 'destinations/destination_confirm_delete.html'
+        )
 
     def test_edit_review_unauthorized(self):
         """
-        Test that another user cannot edit 
+        Test that another user cannot edit
         another users destination review
         """
         user_model = get_user_model()
@@ -96,8 +98,8 @@ class TestViews(TestCase):
         self.assertTrue(logged_in)
         response = self.client.get('/destinations/delete/1/')
         self.assertEqual(response.status_code, 403)
-    
-    
+
+
 class TestViewsRedirect(TestCase):
     """
     Test views when not logged in
