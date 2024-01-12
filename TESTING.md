@@ -117,3 +117,21 @@ The website was tested for its responsiveness on the following devices and no is
 * iPad Air
 * Surface Pro 7
 * Nexus 10
+
+## Notable Bugs
+
+* During the early stages of the project development, there was a re-occurring bug regarding the overriding of Bootstraps own styling.
+
+    * Issue: 
+
+    When using Bootstrap, it already comes with their styles applied to it but their styles are not always the end product that I wanted in this project. Therefore, I needed to override these styles by using use base.css file by applying my own custom css code. Initially, when I was trying to override these Bootstrap styles with my own custom css code, it was not being shown to the user. 
+
+    * Fix:
+
+    To target the elements I wanted to change, I had to target them properly. Therefore, the fix was the open up developer tools to see what I should be targeting on my css file to make sure that my own styles were being applied correctly. 
+
+* Another notable bug which has been left unfixed is during the creation of a new photography post. 
+
+    * Issue: 
+
+    For photography post, CRUD functionality is present and working. The issue is the loading time once all 10 pictures are uploaded and the user clicks the create post button. This is not a serious bug that negatively effects the website but it will be noticeable to users, as there is loading delay compared to all the other parts of the website. 
