@@ -96,3 +96,23 @@ class TestViews(TestCase):
         self.assertTrue(logged_in)
         response = self.client.get('/destinations/delete/1/')
         self.assertEqual(response.status_code, 403)
+    
+    
+class TestViewsRedirect(TestCase):
+    """
+    Test views when not logged in
+    """
+    def test_create_destination_review_redirect(self):
+        """ Create destination review test """
+        response = self.client.get('/destinations/')
+        self.assertEqual(response.status_code, 302)
+
+    def test_edit_destination_review_redirect(self):
+        """ Edit destination review test """
+        response = self.client.get('/destinations/edit/1/')
+        self.assertEqual(response.status_code, 302)
+
+    def test_delete_destination_review_redirect(self):
+        """ Delete destination review test """
+        response = self.client.get('/destinations/delete/1/')
+        self.assertEqual(response.status_code, 302)
