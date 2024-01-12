@@ -50,3 +50,49 @@ class TestViews(TestCase):
         response = self.client.get('/destinations/delete/1/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'destinations/destination_confirm_delete.html')
+
+    def test_edit_review_unauthorized(self):
+        """
+        Test that another user cannot edit 
+        another users destination review
+        """
+        user_model = get_user_model()
+        # Create second user for 403 errors
+        username = 'LFilipe'
+        password = 'gaudencio95'
+        user = user_model.objects.create_user(
+            username=username,
+            password=password,
+            is_superuser=False
+        )
+        logged_in = self.client.login(
+            username=username,
+            password=password
+        )
+
+        self.assertTrue(logged_in)
+        response = self.client.get('/destinations/edit/1/')
+        self.assertEqual(response.status_code, 403)
+
+    def test_delete_review_unauthorized(self):
+        """
+        Test that another user cannot delete
+        another users destination review
+        """
+        user_model = get_user_model()
+        # Create second user for 403 errors
+        username = 'LFilipe'
+        password = 'gaudencio95'
+        user = user_model.objects.create_user(
+            username=username,
+            password=password,
+            is_superuser=False
+        )
+        logged_in = self.client.login(
+            username=username,
+            password=password
+        )
+
+        self.assertTrue(logged_in)
+        response = self.client.get('/destinations/delete/1/')
+        self.assertEqual(response.status_code, 403)
