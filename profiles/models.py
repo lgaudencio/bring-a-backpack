@@ -18,8 +18,8 @@ class Profile(models.Model):
         size=[250, 250], quality=75, upload_to="profiles/",
         force_format="WEBP", blank=False
     )
-    nationality = RichTextField(max_length=50, null=False, blank=False)
-    traveler_type = RichTextField(max_length=100, null=False, blank=False)
+    nationality = RichTextField(max_length=50, null=True, blank=True)
+    traveler_type = RichTextField(max_length=100, null=True, blank=True)
     bio = RichTextField(max_length=2000, null=True, blank=True)
 
     def __str__(self):
