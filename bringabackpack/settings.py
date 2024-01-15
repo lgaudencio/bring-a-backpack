@@ -42,9 +42,6 @@ ALLOWED_HOSTS = [
     'localhost', 'bring-a-backpack-7f3c85a6ca8a.herokuapp.com'
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://bring-a-backpack-7f3c85a6ca8a.herokuapp.com']
-
-
 # Application definition
 
 INSTALLED_APPS = [
